@@ -36,6 +36,10 @@ def load(path, actions):
         for action in actions:
             print('.'),
             model_dict[action]=load_model(path+action+".h5")
+    elif(Constants.alg_type == "A/C"):
+        model_dict["model"] = load_model(path+"actor.h5")
+        critic_dict = {}
+        critic_dict["model"] = load_model(path+"critic.h5")
     else:
         model_dict["model"] = load_model(path+"model.h5")
     print("done")
@@ -53,7 +57,6 @@ def optimal_action(model_dict, actions, s):
              if act_val >= opt[0] or opt[1]==None:
                  opt=(act_val, action)
          return opt[1]
-     
      else:
          opt = actions[np.argmax(model_dict["model"].predict(state2vec(s))[0])]
          return opt

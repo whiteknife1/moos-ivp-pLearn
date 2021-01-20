@@ -15,6 +15,8 @@ import os
 import matplotlib.pyplot as plt
 import subprocess
 import colorama
+import tensorflow as tf
+import keras.backend as K
 
 Constants=Constants()
 
@@ -53,7 +55,7 @@ def make_states():
 
     for index in range(len(all_states)):
        all_states[index]=tuple(all_states[index])
-       
+
     return all_states
 
 
@@ -62,7 +64,7 @@ def make_actions():
     how to descritize action space (using step). Create different action spaces dependent 
     on Constant flags. 
     """
-    all_actions=[]        
+    all_actions=[]
     if(not Constants.relative):
         for i in range(0, 360, Constants.theta_size_act):
             for speed in Constants.speeds:
@@ -72,7 +74,7 @@ def make_actions():
             for speed in Constants.speeds:
                 all_actions.append((speed, i))
     return all_actions
-    
+
 def make_rewards(smooth = True):
     """
     make reward function. This part is very important to making the 
@@ -100,12 +102,10 @@ def make_rewards(smooth = True):
             dist=state[Constants.state["flag_dist"].index]
             discount = Constants.reward_dropoff
             return Constants.max_reward*discount**(max(0, dist))
-            
-            
-        
+
     return reward_fn
 
-    
+
 def within_goal(state):
    """
    helper function to give a reward based on proximity to the goal state (flag)
@@ -116,7 +116,7 @@ def within_goal(state):
         value = min(max(dist-Constants.max_reward_radius, 0), 200)
         return float(Constants.max_reward)*reward_dropoff**value
    else:
-        return 0 
+        return 0
 
 def within_bound(state):
    """
@@ -132,10 +132,10 @@ def within_bound(state):
            return -1.5*Constants.max_reward-boundary_dist*(-1.5*Constants.max_reward/10)
        else:
            return 0
-       
+
    elif boundary_dist < 20:
        return Constants.neg_reward-boundary_dist*(Constants.neg_reward/20)
-   
+
    else:
        return 0
 
@@ -152,7 +152,7 @@ def within_tagged(state):
        return Constants.neg_reward-enemy_dist*(Constants.neg_reward/30)
    else:
        return 0
-    
+
 def evaluate(deep_learner, process_cmd, simulation_cmd, iters = Constants.num_eval_iters,
             process_path = Constants.process_path, read_path = Constants.read_path):
     """
@@ -163,7 +163,7 @@ def evaluate(deep_learner, process_cmd, simulation_cmd, iters = Constants.num_ev
     total_trials = 0
     trials_out = 0
     trials_tagged = 0
-    flag_captured = 0 
+    flag_captured = 0
     trial_num = 0
     flag_loc = [-58, -71]
     print("starting simulation")
@@ -171,7 +171,7 @@ def evaluate(deep_learner, process_cmd, simulation_cmd, iters = Constants.num_ev
         trial_num+=1
         #call simulation
         subprocess.call([simulation_cmd, str(trial_num)])
-        
+
         #process simulation.alog with log_converter.py
         process_file=process_path+'/simulation_'+str(trial_num)+'/simulation.alog'
         read_file=read_path+'/simulation_'+str(trial_num)+'.alog'
@@ -214,25 +214,27 @@ def evaluate(deep_learner, process_cmd, simulation_cmd, iters = Constants.num_ev
 #                            Main
 #----------------------------------------------------------------------
 
-#sys.stdout = open('misha_log.txt','a')
-#sys.stderr = open('misha_log.txt','a')
 if(sys.argv[1]=="new" or sys.argv[1]=="debug" or sys.argv[1]=="test" or sys.argv[1]=="evaluate"):
-    learner=Deep_Learner(make_rewards(Constants.smooth_reward), make_actions(), Constants.alg_type, False)
+    sess = tf.Session()
+    K.set_session(sess)
+    learner=Deep_Learner(make_rewards(Constants.smooth_reward), make_actions(), Constants.alg_type, sess, False)
 elif(sys.argv[1]=="load"):
     #check for proper load_model_dir path
+    sess = tf.Session()
+    K.set_session(sess)
     if not os.path.exists(Constants.load_model_dir):
         print(colorama.Fore.RED + "ERROR: Constants.load_model dir: " + Constants.load_model_dir+ " not valid")
-    learner=Deep_Learner(make_rewards(Constants.smooth_reward), make_actions(), Constants.alg_type, True)
+    learner=Deep_Learner(make_rewards(Constants.smooth_reward), make_actions(), Constants.alg_type, sess, True)
 else:
     raise SyntaxError("Not a Valid Argument, Please call with on of the following flags: 'test', 'load', 'new', 'evaluate'")
-    
+
 if(sys.argv[1] == "new" or sys.argv[1] == "load"):
     learner.initialize()
-    if(Constants.alg_type == "fitted"):
-        learner.fitted_Q_learn()
-    else:
+    if Constants.alg_type == "A/C":
+        learner.actor_critic()
+    elif Constants.alg_type == "DQL":
         learner.DQL()
-        
+
 elif(sys.argv[1]=="test"):
     #let's validate Constants.test_address
     if not os.path.exists(Constants.test_address):
