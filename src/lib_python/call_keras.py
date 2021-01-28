@@ -19,6 +19,7 @@ try:
     from keras.models import Sequential
     from keras.layers.core import Dense
     from keras.models import load_model
+    from tensorflow import saved_model
 except Exception as e:
     print(e)
 
@@ -37,9 +38,9 @@ def load(path, actions):
             print('.'),
             model_dict[action]=load_model(path+action+".h5")
     elif(Constants.alg_type == "A/C"):
-        model_dict["model"] = load_model(path+"actor.h5")
+        model_dict["model"] = saved_model.load(path+"actor")
         critic_dict = {}
-        critic_dict["model"] = load_model(path+"critic.h5")
+        critic_dict["model"] = saved_model.load(path+"critic")
     else:
         model_dict["model"] = load_model(path+"model.h5")
     print("done")
