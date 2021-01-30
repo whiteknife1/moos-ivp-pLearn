@@ -23,7 +23,7 @@ import os.path
 import tensorflow as tf
 
 
-
+from DQL import Agent
 #import constants to be used
 from Constants import Constants
 
@@ -114,26 +114,11 @@ class Deep_Learner:
         print("saving model to "+self.save_dir)
 
         #initialize models
-        if self.alg_type == "A/C":
-            # Initialize actor models
-            self.actor_inputs, self.actor_model = self.init_actor()
-            _, self.target_actor_model = self.init_actor()
-            # Initialize gradients for actor
-            self.actor_critic_grad = tf.placeholder(tf.float32, [None, len(self.actions)+1])
-            actor_model_weights = self.actor_model.trainable_weights
-            self.actor_grads = tf.gradients(self.actor_model.output, actor_model_weights, -self.actor_critic_grad)
-            grads = zip(self.actor_grads, actor_model_weights)
-            self.optimize = tf.train.AdamOptimizer(self.lr).apply_gradients(grads)
-            # Initialize critic models
-            self.critic_inputs, self.critic_action_inputs, self.critic_model = self.init_critic()
-            _, _, self.target_critic_model = self.init_critic()
-            # Initialize gradients for critic
-            self.critic_grads = tf.gradients(self.critic_model.output, self.critic_action_inputs)
-            self.sess.run(tf.initialize_all_variables())
-        elif self.alg_type == "DQL":
-            self.model_NN = self.init_DQL_net()
-            #maintaining a target model that is updated less frequently aids convergence
-            self.target_NN = self.init_DQL_net()
+        if self.alg_type == "DQL":
+            self.dql_agent = Agent(self.actions)
+            if self.load:
+                self.dql_agent.load_models()
+            self.dql_agent.save_model(self.save_dir)
         else:
             raise SyntaxError("alg_type: "+self.alg_type+" not supported. Please specify either 'fitted', 'DQL', or 'A/C' as your alg_type.")
 
@@ -411,11 +396,11 @@ class Deep_Learner:
             self.sim_episode(trial_num=trial)
             self.DQL_train_model()
             #update target network
-            self.target_NN.set_weights(self.model_NN.get_weights())
+            self.dql_agent.set_weights()
             self.save_memory()
             if Constants.save_iteration:
                 self.update_iters()
-            self.model_NN.save(self.save_dir+"model.h5")
+            self.dql_agent.save_model(self.save_dir)
     """
     Procedure: DQL_train_model()
 
@@ -441,180 +426,9 @@ class Deep_Learner:
                 data = random.sample(self.memory, self.batch_size)
 
             #make predictions with target network, train neural network based on target network prediction for "batch_size" iterations
-            for s_0, a, s_1, r in data:
-                baseline = self.model_NN.predict(self.state2vec(s_0))
-                max_next = max(self.target_NN.predict(self.state2vec(s_1))[0])
-                #update the predicted value for that one action
-                baseline[0][self.index_by_action[a]] = r + max_next*self.discount_factor
-                self.model_NN.fit(self.state2vec(s_0), baseline, epochs=Constants.epochs)
+            for cur_state, action, new_state, reward in data:
+                self.dql_agent.learn(cur_state, action, new_state, reward)
 
-    """
-    Procedure: init_DQL_net()
-
-      Purpose: Initializes a Deep Q eural net with one output per action in the action space.
-
-      Returns: a neural net with one ouput per action in the action space
-    """
-    def init_DQL_net(self):
-        if not self.load:
-            #initialize single neural net with random weights
-            model = Sequential()
-            for layer in range(self.num_layers):
-               if layer==0:
-                   #if first layer, specify input dimention as number of states (+1 for offset)
-                   nodes=Dense(units=self.num_units, input_dim=Constants.num_states+1,activation=Constants.activation_function)
-               else:
-                   nodes=Dense(units=self.num_units,activation=Constants.activation_function)
-               model.add(nodes)
-            model.add(Dense(units=len(self.actions), activation="linear"))
-            model.compile(loss='mean_squared_error', optimizer=Adam(lr=self.lr), metrics=["accuracy"])
-        else:
-            model = load_model(Constants.load_model_dir+"model.h5")
-        model.save(self.save_dir+"model.h5")
-        return model
-
-    ##################################################################################################################
-    # Code for Actor Critic Q Learning:                                                                              #
-    # Based loosely on a tutorial found at:                                                                          #
-    # https://towardsdatascience.com/reinforcement-learning-w-keras-openai-actor-critic-models-f084612cfd69          #
-    ##################################################################################################################
-    """
-    Procedure: actor_critic()
-    """
-    def actor_critic(self):
-        for iter in range(self.iteration, self.iters):
-            print("---------------------- On iteration "+ str(iter+1)+ " of "+ str(self.iters)+" -----------------------")
-            trial=iter*self.num_traj
-            #simulates episode and puts relevant experiences into memory bank
-            self.sim_episode(trial_num=trial)
-            self.train_actor_critic()
-            #update target networks
-            self.update_targets()
-            if Constants.save_iteration:
-                self.update_iters()
-            self.save_memory()
-            self.target_actor_model.save(self.save_dir+"actor.h5")
-            self.target_critic_model.save(self.save_dir+"critic.h5")
-
-    """
-    Procedure: train_actor_critic()
-    """
-    def train_actor_critic(self):
-        if self.batch_size > len(self.memory):
-            return
-        else:
-            #rewards = []
-            data = random.sample(self.memory, self.batch_size)
-            self.train_critic(data)
-            self.train_actor(data)
-            return
-
-    """
-    Procedure: train_actor_critic()
-    """
-    def train_critic(self, data):
-        for d in data:
-            cur_state, action, new_state, reward = d
-            target_action = self.target_actor_model.predict(self.state2vec(new_state))
-            future_reward = self.target_critic_model.predict([self.state2vec(new_state), target_action])[0][0]
-            reward += self.discount_factor*future_reward
-            # Video method
-            self.critic_model.fit([self.state2vec(cur_state), self.state2vec(action)], reward, verbose=0)
-
-    """
-    Procedure: train_actor_critic()
-    """
-    def train_actor(self, data):
-        for d in data:
-            cur_state, action, new_state, reward = d
-            predicted_action = self.actor_model.predict(self.state2vec(cur_state))
-            grads = self.sess.run(self.critic_grads, feed_dict = {
-                self.critic_inputs: self.state2vec(cur_state),
-                self.critic_action_inputs: predicted_action
-            })[0]
-            self.sess.run(self.optimize, feed_dict = {
-                self.actor_inputs: self.state2vec(cur_state),
-                self.actor_critic_grad: grads
-            })
-
-    """
-    Procedure: update_targets
-    Purpose: Update weights for both actor and critic networks
-    """
-    def update_targets(self):
-        # Update actor weights
-        actor_model_weights = self.actor_model.get_weights()
-        target_actor_weights = self.target_actor_model.get_weights()
-        # switch actor_model's weights wth target_actor_model's
-        for i in range(len(target_actor_weights)):
-            target_actor_weights[i] = actor_model_weights[i]
-        self.target_actor_model.set_weights(target_actor_weights)
-        # Update critic weights
-        critic_model_weights = self.critic_model.get_weights()
-        target_critic_weights = self.target_critic_model.get_weights()
-        # switch critc_model's weights wth target_critic_model's
-        for i in range(len(target_critic_weights)):
-            target_critic_weights[i] = critic_model_weights[i]
-        self.target_critic_model.set_weights(target_critic_weights)
-
-    """
-    Procedure: init_actor()
-    Purpose:
-    Returns: a neural network for the actor model and a reference to the input layer
-    """
-    def init_actor(self):
-        if not self.load:
-            #initialize neural network
-            # inputs for model, based on number of states in constants
-            inputs = Input(shape=(Constants.num_states+1,))
-            # inputs = Input(shape=(Constants.num_states+1, len(self.actions)+1))
-            actor_1 = Dense(512, activation="relu")(inputs)
-            # create additional layers, hardcoded for now
-            actor_2 = Dense(1024, activation="relu")(actor_1)
-            actor_3 = Dense(512, activation="relu")(actor_2)
-            # initialize output
-            outputs = Dense(len(self.actions)+1, activation="relu")(actor_3)
-            # initialize actor critic nueral network
-            model = Model(inputs=inputs, outputs=outputs)
-            # initialize optimizer
-            optimizer = Adam(lr=self.lr)
-            model.compile(loss="mse", optimizer=optimizer)
-        else:
-            model = load_model(Constants.load_model_dir+"actor.h5")
-        model.save(self.save_dir+"actor.h5")
-        return (inputs, model)
-
-    """
-    Procedure: init_critic()
-    Purpose:
-    Returns: a neural network for the critic model, environment state input, and action state input
-    """
-    def init_critic(self):
-        if not self.load:
-            # Initialize model for inputs
-            state_inputs = Input(shape=(Constants.num_states+1,))
-            # state_inputs = Input(shape=(Constants.num_states+1, len(self.actions)+1))
-            # Initialize layers for critic, hardcoded for now
-            critic_1 = Dense(512, activation="relu")(state_inputs)
-            critic_2 = Dense(1024)(critic_1)
-            # Initialize layer for action inputs
-            action_inputs = Input((len(self.actions)+1,))
-            action_1 = Dense(1024)(action_inputs)
-            # merge layers
-            merge = Add()([critic_2, action_1])
-            merge_1 = Dense(512, activation="relu")(merge)
-            # create layer for output
-            output = Dense(1, activation="relu")(merge_1)
-            print("Initializing")
-            print(state_inputs)
-            print(action_inputs)
-            model = Model(input=[state_inputs, action_inputs], output=output)
-            optimizer = Adam(lr=self.lr)
-            model.compile(loss="mse", optimizer=optimizer)
-        else:
-            model = load_model(Constants.load_model_dir+"critic.h5")
-        model.save(self.save_dir+"critic.h5")
-        return (state_inputs, action_inputs, model)
 
     #################################
     # Helper functions
