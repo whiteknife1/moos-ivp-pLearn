@@ -226,7 +226,7 @@ class Constants:
       self.process_cmd = learning_path+'log_converter.py'
       self.read_path = learning_path+'processed'
       self.out_address = simulation_path+'m200/table.csv'
-      self.load_model_dir = learning_path+'examples/Simple_Opponent_BHV/topModel/'
+      self.load_model_dir = learning_path+'models/new_model/'
       self.save_model_dir = learning_path+'models/new_model/'
       self.mem_address = learning_path+'models/new_model/'
       self.eval_address = learning_path+'models/new_model'
