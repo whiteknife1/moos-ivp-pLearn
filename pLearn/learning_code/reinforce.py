@@ -80,9 +80,9 @@ def make_rewards(smooth = True):
     rewards some distance from the actual reward point. Also negative 
     rewards for going out of bounds
     """
-    if smooth:
-        def reward_fn(state):
-            return within_goal(state)+within_bound(state)+within_tagged(state)+eny_angle(state)+angle_to_flag(state)
+    def reward_fn(state):
+        return within_goal(state)+within_bound(state)+within_tagged(state)+eny_angle(state)+angle_to_flag(state)
+    return reward_fn
 """
     else:
         def reward_fn(state):
@@ -104,7 +104,6 @@ def make_rewards(smooth = True):
 """         
             
         
-    return reward_fn
 
 def within_goal(state):
    """
