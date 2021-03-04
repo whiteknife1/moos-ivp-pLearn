@@ -562,6 +562,16 @@ string BHV_Input::make_state()
 	    obj=process_angle(enemy_flag[0], enemy_flag[1], bucket, "absolute", m_osX, m_osY);
 	  }
 	}
+        else if(var == "deviation"){
+	  unordered_map<string, NodeReport>::iterator veh = m_player_map.find(vehicle);
+          double angle_to_eny = process_angle(m_osX, m_osY, bucket, "absolute", veh->second.nav_x, veh->second.nav_y); 
+	  double eny_angle_to_me = adjust_angle_180(angle_to_eny);
+	  double eny_heading = veh->second.heading/bucket;
+          double my_heading = m_heading_abs/bucket;	
+	  double my_dev = diff_angles(angle_to_eny, my_heading);
+	  double eny_dev = diff_angles(eny_angle_to_me, eny_heading);
+          obj = my_dev+eny_dev;
+        }
       }
       else{
 	 unordered_map<string, NodeReport>::iterator veh = m_player_map.find(vehicle);
@@ -584,7 +594,6 @@ string BHV_Input::make_state()
 	 }
       }
     }
-    
     else if(parameters[0]=="raw"){
       if(vehicle == "self"){
 	//process raw data
@@ -672,6 +681,31 @@ double BHV_Input::process_angle(double goal_x, double goal_y, int bucket_size, s
     }
   }
   return(theta/bucket_size);
+}
+
+//Helper function for finding deviation
+//Finds difference between two angles
+double BHV_Input::diff_angles(double ang1, double ang2)
+{
+  double diff = abs(ang1-ang2);
+  if(diff > 180){
+    return(360-diff);
+  }
+  else{
+    return(diff);
+  }
+}
+
+//Helper function for finding deviation
+//Adjusts angle by 180 degrees
+double BHV_Input::adjust_angle_180(double ang)
+{
+  if(ang >= 180){
+    return(ang-180);
+  }
+  else{
+    return(ang+180);
+  }
 }
   
 double BHV_Input::process_flag_captured()
