@@ -232,5 +232,5 @@ class Constants:
       self.save_model_dir = learning_path+'models/deviation_test/'
       self.mem_address = learning_path+'models/deviation_test/'
       self.eval_address = learning_path+'models/deviation_test'
-      self.test_address = learning_path+'models/deviation_test/'
+      self.test_address = learning_path+'models/deviation_test/iteration_24/'
 
