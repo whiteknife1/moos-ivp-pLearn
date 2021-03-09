@@ -21,22 +21,22 @@ GRABR_POS=""
 GRABL_POS=""
 UNTAG_POS=""
 BEH="ATTACK"
-RANDOM=$$
+# RANDOM=$$
 #------------------------------------------------------
 # Generate Random X, Y within Field
 #------------------------------------------------------
-RAND_X="$((RANDOM%146))"
-RAND_Y="$((RANDOM%71))"
+# RAND_X="$((RANDOM%146))"
+# RAND_Y="$((RANDOM%71))"
 
 #convert X using rotation matrix (theta = 24.775)
-NEW_X=$(echo "$RAND_X*.908-$RAND_Y*.419056" | bc -l)
-NEW_X=$(echo "$NEW_X-53" | bc -l)
+# NEW_X=$(echo "$RAND_X*.908-$RAND_Y*.419056" | bc -l)
+# NEW_X=$(echo "$NEW_X-53" | bc -l)
 
 #convert Y using rotation matrix (theta = 24.775)
-NEW_Y=$(echo "$RAND_Y*.908+$RAND_X*.419056" | bc -l)
-NEW_Y=$(echo "$NEW_Y-114" | bc -l)
+# NEW_Y=$(echo "$RAND_Y*.908+$RAND_X*.419056" | bc -l)
+# NEW_Y=$(echo "$NEW_Y-114" | bc -l)
 
-ANGLE="$((RANDOM%360))"
+# ANGLE="$((RANDOM%360))"
 
 #-------------------------------------------------------
 #  Part 1: Check for and handle command-line arguments
@@ -198,8 +198,9 @@ nsplug meta_m200.moos targ_${VNAME}.moos -f \
     VMODEL=$VMODEL               \
     VTYPE="kayak"                \
     VTEAM=$VTEAM                 \
-    START_POS="$NEW_X,$NEW_Y,$ANGLE" \
+    START_POS=$START_POS \
     $SIM
+    # START_POS="$NEW_X,$NEW_Y,$ANGLE" \
 
 echo "Assembling BHV file targ_${VNAME}.bhv"
 nsplug meta_m200_train.bhv targ_${VNAME}.bhv -f  \
@@ -215,9 +216,10 @@ nsplug meta_m200_train.bhv targ_${VNAME}.bhv -f  \
         UNTAG_POS=$UNTAG_POS \
 	ENEMIES=$ENEMIES             \
 	FLAG=$START_POS     \
-	START_RAND="$NEW_X,$NEW_Y,$ANGLE" \
+	START_RAND=$START_POS \
 	EFLAG=$EFLAG \
 	BEH=$BEH
+	# START_RAND="$NEW_X,$NEW_Y,$ANGLE" \
 
 
 if [ ${JUST_BUILD} = "yes" ] ; then
