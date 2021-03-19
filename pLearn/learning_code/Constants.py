@@ -66,7 +66,7 @@ class Constants:
       self.state["enemy_angle"]=State(index=10, typ="angle", var="player", rang=(0,360), vehicle="evan")
       self.state["enemy_heading"]=State(index=11, typ="raw", var="heading", rang=(0, 360), vehicle="evan")
       # need to define vehicles to take deviation from, excluding self
-      self.state["deviation"] = State(index=12, typ="angle", var= "deviation", rang=(0,360), vehicle="evan")
+      self.state["deviation"] = State(index=12, typ="angle", var= "deviation", rang=(0,1), vehicle="evan")
 
       #maybe add speed info
       self.num_states=len(self.state)
@@ -108,7 +108,7 @@ class Constants:
       self.num_units = 10
       self.activation_function = "relu"
       self.num_traj = 1
-      self.iters = 200
+      self.iters = 8
       self.lr = .005
       self.training_type = "batch"
       self.eps_min = .01
@@ -228,9 +228,9 @@ class Constants:
       self.process_cmd = learning_path+'log_converter.py'
       self.read_path = learning_path+'processed'
       self.out_address = simulation_path+'m200/table.csv'
-      self.load_model_dir = learning_path+'models/baseline/'
-      self.save_model_dir = learning_path+'models/new_model/'
-      self.mem_address = learning_path+'models/baseline/'
-      self.eval_address = learning_path+'models/baseline'
-      self.test_address = learning_path+'models/baseline/'
+      self.load_model_dir = learning_path+'models/constants_test/'
+      self.save_model_dir = learning_path+'models/constants_test/'
+      self.mem_address = learning_path+'models/constants_test/'
+      self.eval_address = learning_path+'models/constants_test'
+      self.test_address = learning_path+'models/constants_test/iteration_0/'
 
