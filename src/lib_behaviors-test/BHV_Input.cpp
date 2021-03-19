@@ -562,16 +562,7 @@ string BHV_Input::make_state()
 	    obj=process_angle(enemy_flag[0], enemy_flag[1], bucket, "absolute", m_osX, m_osY);
 	  }
 	}
-        else if(var == "deviation"){
-	  unordered_map<string, NodeReport>::iterator veh = m_player_map.find(vehicle);
-          double angle_to_eny = process_angle(m_osX, m_osY, bucket, "absolute", veh->second.nav_x, veh->second.nav_y); 
-	  double eny_angle_to_me = adjust_angle_180(angle_to_eny);
-	  double eny_heading = veh->second.heading/bucket;
-          double my_heading = m_heading_abs/bucket;	
-	  double my_dev = diff_angles(angle_to_eny, my_heading);
-	  double eny_dev = diff_angles(eny_angle_to_me, eny_heading);
-          obj = my_dev+eny_dev;
-        }
+        
       }
       else{
 	 unordered_map<string, NodeReport>::iterator veh = m_player_map.find(vehicle);
@@ -587,6 +578,24 @@ string BHV_Input::make_state()
 	   else if(var=="player"){
 	     obj=process_angle(m_osX, m_osY, bucket, "absolute", veh->second.nav_x, veh->second.nav_y);
 	   }
+	   else if(var == "deviation"){
+	  //unordered_map<string, NodeReport>::iterator veh = m_player_map.find(vehicle);
+            double angle_to_eny = process_angle(m_osX, m_osY, bucket, "absolute", veh->second.nav_x, veh->second.nav_y); 
+	    double eny_angle_to_me = adjust_angle_180(angle_to_eny);
+	    double eny_heading = veh->second.heading/bucket;
+            double my_heading = m_heading_abs/bucket;	
+	    double my_dev = diff_angles(angle_to_eny, my_heading);
+	    double eny_dev = diff_angles(eny_angle_to_me, eny_heading);
+            double total_dev = my_dev+eny_dev;
+	    double normalized_dev = total_dev/240.0; //normalize between 0 and 1
+	    if(normalized_dev > 1.000){
+              normalized_dev = 1.000;
+	    }
+	    else{ //round to 3 places past decimal
+              normalized_dev = (int)(normalized_dev*1000.0)/1000.0;
+            }
+	    obj = normalized_dev;
+        }
 	 }
 	 else{
 	   string message = vehicle+" not specified in Constants.py";
