@@ -1,0 +1,760 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% LOG FILE:       ./LOG_FELIX_19_3_2021_____19_43_31/LOG_FELIX_19_3_2021_____19_43_31.alog
+%% FILE OPENED ON  Thu Jan  1 00:00:00 1970
+%% LOGSTART               6464732045.92
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+60.770          INP_STAT             pHelmIvP:2:waypt_grab state: 0,117.784,23.518,240,0,131.237,19.3088,33.6928,42.048,132.378,206.952,0,0.25 action: 2,300 
+61.038          INP_STAT             pHelmIvP:3:waypt_grab successfully reset action! 
+61.038          INP_STAT             pHelmIvP:3:waypt_grab state: 0,117.775,23.5175,240.118,0,131.228,19.3169,33.6935,42.047,132.37,206.952,0,0.25 action: 2,300 
+61.291          INP_STAT             pHelmIvP:4:waypt_grab successfully reset action! 
+61.291          INP_STAT             pHelmIvP:4:waypt_grab state: 0,117.707,23.514,240.75,0,131.16,19.3851,33.6989,42.0394,132.301,206.951,0,0.253 action: 2,300 
+61.541          INP_STAT             pHelmIvP:5:waypt_grab successfully reset action! 
+61.541          INP_STAT             pHelmIvP:5:waypt_grab state: 0,117.63,23.5104,241.402,0,131.083,19.462,33.7041,42.0318,132.215,206.942,0.12,0.255 action: 2,300 
+61.788          INP_STAT             pHelmIvP:6:waypt_grab successfully reset action! 
+61.789          INP_STAT             pHelmIvP:6:waypt_grab state: 0,117.461,23.504,242.688,0,130.913,19.6303,33.7127,42.0179,131.941,206.851,1.09,0.256 action: 2,300 
+62.042          INP_STAT             pHelmIvP:7:waypt_grab successfully reset action! 
+62.042          INP_STAT             pHelmIvP:7:waypt_grab state: 0,117.322,23.5001,243.704,0,130.774,19.7695,33.7169,42.0093,131.802,206.851,1.09,0.26 action: 2,300 
+62.295          INP_STAT             pHelmIvP:8:waypt_grab successfully reset action! 
+62.295          INP_STAT             pHelmIvP:8:waypt_grab state: 0,117.068,23.496,245.466,0,130.521,20.0227,33.7184,41.9997,131.319,206.675,2.74,0.261 action: 2,300 
+62.544          INP_STAT             pHelmIvP:9:waypt_grab successfully reset action! 
+62.544          INP_STAT             pHelmIvP:9:waypt_grab state: 0,116.872,23.4953,246.765,0,130.325,20.219,33.7144,41.9975,131.123,206.679,2.74,0.266 action: 2,300 
+62.796          INP_STAT             pHelmIvP:10:waypt_grab successfully reset action! 
+62.796          INP_STAT             pHelmIvP:10:waypt_grab state: 0,116.543,23.4991,248.846,0,129.995,20.55,33.6978,42.0037,130.468,206.444,4.88,0.266 action: 2,300 
+63.050          INP_STAT             pHelmIvP:11:waypt_grab successfully reset action! 
+63.050          INP_STAT             pHelmIvP:11:waypt_grab state: 0,116.3,23.5055,250.301,0,129.753,20.7935,33.6782,42.0156,130.227,206.455,4.88,0.272 action: 2,300 
+63.298          INP_STAT             pHelmIvP:12:waypt_grab successfully reset action! 
+63.298          INP_STAT             pHelmIvP:12:waypt_grab state: 0,115.91,23.5221,252.537,0,129.363,21.1874,33.6339,42.0477,129.42,206.185,7.26,0.271 action: 2,300 
+63.547          INP_STAT             pHelmIvP:13:waypt_grab successfully reset action! 
+63.547          INP_STAT             pHelmIvP:13:waypt_grab state: 0,115.631,23.5386,254.053,0,129.086,21.4683,33.5931,42.0796,129.144,206.206,7.26,0.278 action: 2,300 
+63.799          INP_STAT             pHelmIvP:14:waypt_grab successfully reset action! 
+63.799          INP_STAT             pHelmIvP:14:waypt_grab state: 0,115.192,23.5723,256.335,0,128.648,21.9132,33.5138,42.145,128.195,205.92,9.79,0.277 action: 2,300 
+64.053          INP_STAT             pHelmIvP:15:waypt_grab successfully reset action! 
+64.053          INP_STAT             pHelmIvP:15:waypt_grab state: 0,114.886,23.6009,257.846,0,128.344,22.2229,33.4484,42.2009,127.893,205.951,9.79,0.283 action: 2,300 
+64.300          INP_STAT             pHelmIvP:16:waypt_grab successfully reset action! 
+64.300          INP_STAT             pHelmIvP:16:waypt_grab state: 0,114.413,23.6539,260.081,0,127.872,22.7048,33.3306,42.3037,126.83,205.651,12.39,0.282 action: 2,300 
+64.548          INP_STAT             pHelmIvP:17:waypt_grab successfully reset action! 
+64.548          INP_STAT             pHelmIvP:17:waypt_grab state: 0,114.087,23.6961,261.545,0,127.548,23.0367,33.2386,42.3855,126.507,205.694,12.39,0.288 action: 2,300 
+64.804          INP_STAT             pHelmIvP:18:waypt_grab successfully reset action! 
+64.804          INP_STAT             pHelmIvP:18:waypt_grab state: 0,113.589,23.7697,263.682,0,127.053,23.5454,33.0809,42.5275,125.345,205.394,14.96,0.286 action: 2,300 
+65.052          INP_STAT             pHelmIvP:19:waypt_grab successfully reset action! 
+65.052          INP_STAT             pHelmIvP:19:waypt_grab state: 0,113.251,23.8256,265.065,0,126.717,23.8912,32.9627,42.6351,125.01,205.449,14.96,0.292 action: 2,300 
+65.300          INP_STAT             pHelmIvP:20:waypt_grab successfully reset action! 
+65.300          INP_STAT             pHelmIvP:20:waypt_grab state: 0,112.911,23.8871,266.41,0,126.379,24.2409,32.8343,42.7528,124.673,205.509,14.96,0.297 action: 2,300 
+65.552          INP_STAT             pHelmIvP:21:waypt_grab successfully reset action! 
+65.552          INP_STAT             pHelmIvP:21:waypt_grab state: 0,112.396,23.9894,268.354,0,125.867,24.7711,32.6231,42.9478,122.633,204.84,19.85,0.285 action: 2,300 
+65.801          INP_STAT             pHelmIvP:22:waypt_grab successfully reset action! 
+65.801          INP_STAT             pHelmIvP:22:waypt_grab state: 0,111.878,24.1035,270.207,0,125.352,25.3059,32.3906,43.164,122.118,204.948,19.85,0.293 action: 2,300 
+66.056          INP_STAT             pHelmIvP:23:waypt_grab successfully reset action! 
+66.056          INP_STAT             pHelmIvP:23:waypt_grab state: 0,111.532,24.1862,271.393,0,125.007,25.665,32.2239,43.3198,120.927,204.634,22.14,0.288 action: 2,300 
+66.308          INP_STAT             pHelmIvP:24:waypt_grab successfully reset action! 
+66.309          INP_STAT             pHelmIvP:24:waypt_grab state: 0,111.186,24.2737,272.537,0,124.663,26.0244,32.0487,43.4841,120.582,204.716,22.14,0.293 action: 2,300 
+66.556          INP_STAT             pHelmIvP:25:waypt_grab successfully reset action! 
+66.556          INP_STAT             pHelmIvP:25:waypt_grab state: 0,110.669,24.414,274.173,0,124.148,26.5632,31.7708,43.7458,119.181,204.462,24.3,0.291 action: 2,300 
+66.806          INP_STAT             pHelmIvP:26:waypt_grab successfully reset action! 
+66.806          INP_STAT             pHelmIvP:26:waypt_grab state: 0,110.326,24.5131,275.213,0,123.806,26.9217,31.5759,43.9298,118.839,204.554,24.3,0.295 action: 2,300 
+67.061          INP_STAT             pHelmIvP:27:waypt_grab successfully reset action! 
+67.061          INP_STAT             pHelmIvP:27:waypt_grab state: 0,109.814,24.6706,276.69,0,123.295,27.4596,31.2693,44.2203,118.327,204.701,24.3,0.301 action: 2,300 
+67.314          INP_STAT             pHelmIvP:28:waypt_grab successfully reset action! 
+67.314          INP_STAT             pHelmIvP:28:waypt_grab state: 0,109.475,24.7806,277.609,0,122.956,27.8164,31.0567,44.4221,117.044,204.419,26.4,0.313 action: 2,300 
+67.553          INP_STAT             pHelmIvP:29:waypt_grab successfully reset action! 
+67.553          INP_STAT             pHelmIvP:29:waypt_grab state: 0,108.971,24.9531,278.922,0,122.452,28.3488,30.7263,44.7366,116.538,204.578,26.4,0.317 action: 2,300 
+67.811          INP_STAT             pHelmIvP:30:waypt_grab successfully reset action! 
+67.811          INP_STAT             pHelmIvP:30:waypt_grab state: 0,108.639,25.0726,279.765,0,122.119,28.7014,30.499,44.9533,115.234,204.315,28.46,0.331 action: 2,300 
+68.039          INP_STAT             pHelmIvP:31:waypt_grab successfully reset action! 
+68.039          INP_STAT             pHelmIvP:31:waypt_grab state: 0,108.145,25.2591,280.96,0,121.623,29.2281,30.147,45.2896,113.735,204.12,30.41,0.346 action: 2,240 
+68.318          INP_STAT             pHelmIvP:32:waypt_grab successfully reset action! 
+68.318          INP_STAT             pHelmIvP:32:waypt_grab state: 0,107.821,25.3855,280.204,0,121.296,29.5752,29.9103,45.516,113.406,204.236,30.41,0.342 action: 2,300 
+68.568          INP_STAT             pHelmIvP:33:waypt_grab successfully reset action! 
+68.569          INP_STAT             pHelmIvP:33:waypt_grab state: 0,107.333,25.5622,278.389,0,120.804,30.0951,29.5821,45.8287,112.912,204.399,30.41,0.333 action: 2,300 
+68.814          INP_STAT             pHelmIvP:34:waypt_grab successfully reset action! 
+68.814          INP_STAT             pHelmIvP:34:waypt_grab state: 0,107.005,25.6827,279.319,0,120.473,30.4458,29.3598,46.0404,111.555,204.147,32.32,0.347 action: 2,300 
+69.071          INP_STAT             pHelmIvP:35:waypt_grab successfully reset action! 
+69.071          INP_STAT             pHelmIvP:35:waypt_grab state: 0,106.513,25.8728,280.65,0,119.975,30.9736,29.0118,46.3727,111.054,204.322,32.32,0.351 action: 2,300 
+69.321          INP_STAT             pHelmIvP:36:waypt_grab successfully reset action! 
+69.321          INP_STAT             pHelmIvP:36:waypt_grab state: 0,106.199,26.0018,282.038,0,119.656,31.3132,28.7771,46.5973,109.676,204.096,34.18,0.366 action: 2,300 
+69.569          INP_STAT             pHelmIvP:37:waypt_grab successfully reset action! 
+69.569          INP_STAT             pHelmIvP:37:waypt_grab state: 0,105.733,26.2053,283.408,0,119.181,31.8192,28.4093,46.9501,109.198,204.285,34.18,0.37 action: 2,300 
+69.820          INP_STAT             pHelmIvP:38:waypt_grab successfully reset action! 
+69.820          INP_STAT             pHelmIvP:38:waypt_grab state: 0,105.42,26.348,284.065,0,118.861,32.1613,28.1531,47.1962,107.797,204.077,35.93,0.382 action: 2,300 
+70.066          INP_STAT             pHelmIvP:39:waypt_grab successfully reset action! 
+70.066          INP_STAT             pHelmIvP:39:waypt_grab state: 0,104.954,26.5687,285.006,0,118.384,32.6729,27.7595,47.5747,107.315,204.283,35.93,0.384 action: 2,300 
+70.323          INP_STAT             pHelmIvP:40:waypt_grab successfully reset action! 
+70.323          INP_STAT             pHelmIvP:40:waypt_grab state: 0,104.648,26.7191,285.609,0,118.069,33.0108,27.4928,47.8314,105.89,204.096,37.72,0.396 action: 2,300 
+70.572          INP_STAT             pHelmIvP:41:waypt_grab successfully reset action! 
+70.572          INP_STAT             pHelmIvP:41:waypt_grab state: 0,104.195,26.9496,286.467,0,117.601,33.513,27.0869,48.2225,104.306,203.998,39.57,0.408 action: 2,300 
+70.827          INP_STAT             pHelmIvP:42:waypt_grab successfully reset action! 
+70.827          INP_STAT             pHelmIvP:42:waypt_grab state: 0,103.898,27.1063,287.016,0,117.293,33.8445,26.8128,48.4869,103.995,204.146,39.57,0.409 action: 2,300 
+71.074          INP_STAT             pHelmIvP:43:waypt_grab successfully reset action! 
+71.074          INP_STAT             pHelmIvP:43:waypt_grab state: 0,103.46,27.3455,287.789,0,116.837,34.3369,26.3968,48.8885,103.535,204.372,39.57,0.41 action: 2,300 
+71.327          INP_STAT             pHelmIvP:44:waypt_grab successfully reset action! 
+71.327          INP_STAT             pHelmIvP:44:waypt_grab state: 0,103.172,27.5078,288.268,0,116.536,34.6624,26.1161,49.1596,102.093,204.232,41.48,0.422 action: 2,300 
+71.576          INP_STAT             pHelmIvP:45:waypt_grab successfully reset action! 
+71.576          INP_STAT             pHelmIvP:45:waypt_grab state: 0,102.746,27.7553,288.962,0,116.088,35.1464,25.6909,49.5706,101.643,204.468,41.48,0.422 action: 2,300 
+71.829          INP_STAT             pHelmIvP:46:waypt_grab successfully reset action! 
+71.829          INP_STAT             pHelmIvP:46:waypt_grab state: 0,102.466,27.9229,289.404,0,115.793,35.4663,25.4048,49.8474,100.196,204.345,43.56,0.434 action: 2,300 
+72.077          INP_STAT             pHelmIvP:47:waypt_grab successfully reset action! 
+72.078          INP_STAT             pHelmIvP:47:waypt_grab state: 0,102.053,28.178,290.025,0,115.354,35.9422,24.9716,50.2667,99.7553,204.59,43.56,0.435 action: 2,300 
+72.323          INP_STAT             pHelmIvP:48:waypt_grab successfully reset action! 
+72.323          INP_STAT             pHelmIvP:48:waypt_grab state: 0,101.782,28.3504,290.414,0,115.065,36.257,24.6806,50.5486,98.2985,204.506,45.85,0.446 action: 2,300 
+72.581          INP_STAT             pHelmIvP:49:waypt_grab successfully reset action! 
+72.581          INP_STAT             pHelmIvP:49:waypt_grab state: 0,101.38,28.6128,290.968,0,114.634,36.726,24.2402,50.9753,96.6847,204.529,47.99,0.457 action: 2,300 
+72.831          INP_STAT             pHelmIvP:50:waypt_grab successfully reset action! 
+72.831          INP_STAT             pHelmIvP:50:waypt_grab state: 0,101.116,28.7896,291.317,0,114.349,37.0359,23.945,51.2615,96.3995,204.703,47.99,0.457 action: 2,300 
+73.079          INP_STAT             pHelmIvP:51:waypt_grab successfully reset action! 
+73.079          INP_STAT             pHelmIvP:51:waypt_grab state: 0,100.726,29.0585,291.82,0,113.925,37.498,23.4988,51.6943,95.9762,204.968,47.99,0.457 action: 2,300 
+73.331          INP_STAT             pHelmIvP:52:waypt_grab successfully reset action! 
+73.331          INP_STAT             pHelmIvP:52:waypt_grab state: 0,100.469,29.24,292.142,0,113.645,37.8042,23.1992,51.985,94.5196,204.967,52.69,0.478 action: 2,300 
+73.582          INP_STAT             pHelmIvP:53:waypt_grab successfully reset action! 
+73.583          INP_STAT             pHelmIvP:53:waypt_grab state: 0,100.089,29.5155,292.595,0,113.227,38.2608,22.747,52.424,93.1673,205.187,63.31,0.523 action: 2,300 
+73.831          INP_STAT             pHelmIvP:54:waypt_grab successfully reset action! 
+73.831          INP_STAT             pHelmIvP:54:waypt_grab state: 0,99.8393,29.7007,292.882,0,112.952,38.5625,22.4447,52.7176,92.8943,205.374,63.31,0.522 action: 2,300 
+74.081          INP_STAT             pHelmIvP:55:waypt_grab successfully reset action! 
+74.081          INP_STAT             pHelmIvP:55:waypt_grab state: 0,99.4702,29.9816,293.29,0,112.541,39.0125,21.9887,53.1607,92.4895,205.658,63.31,0.522 action: 2,300 
+74.336          INP_STAT             pHelmIvP:56:waypt_grab successfully reset action! 
+74.336          INP_STAT             pHelmIvP:56:waypt_grab state: 0,99.2271,30.171,293.549,0,112.269,39.3112,21.6827,53.458,91.1077,205.903,72.91,0.561 action: 2,300 
+74.585          INP_STAT             pHelmIvP:57:waypt_grab successfully reset action! 
+74.585          INP_STAT             pHelmIvP:57:waypt_grab state: 0,98.8679,30.4576,293.919,0,111.863,39.7563,21.2223,53.9056,90.7126,206.197,72.91,0.56 action: 2,300 
+74.837          INP_STAT             pHelmIvP:58:waypt_grab successfully reset action! 
+74.837          INP_STAT             pHelmIvP:58:waypt_grab state: 0,98.6317,30.6503,294.153,0,111.595,40.0512,20.9142,54.2052,89.3653,206.563,81.64,0.594 action: 2,300 
+75.083          INP_STAT             pHelmIvP:59:waypt_grab successfully reset action! 
+75.083          INP_STAT             pHelmIvP:59:waypt_grab state: 0,98.2826,30.9417,294.487,0,111.195,40.4909,20.4508,54.656,88.9814,206.868,81.64,0.593 action: 2,300 
+75.335          INP_STAT             pHelmIvP:60:waypt_grab successfully reset action! 
+75.335          INP_STAT             pHelmIvP:60:waypt_grab state: 0,98.053,31.1377,294.699,0,110.93,40.7824,20.1408,54.9576,87.6693,207.369,90.36,0.626 action: 2,300 
+75.593          INP_STAT             pHelmIvP:61:waypt_grab successfully reset action! 
+75.593          INP_STAT             pHelmIvP:61:waypt_grab state: 0,97.7132,31.4341,295.001,0,110.535,41.2176,19.6742,55.4116,86.301,208.108,98.99,0.657 action: 2,300 
+75.844          INP_STAT             pHelmIvP:62:waypt_grab successfully reset action! 
+75.844          INP_STAT             pHelmIvP:62:waypt_grab state: 0,97.4897,31.6333,295.192,0,110.273,41.5064,19.3622,55.7154,86.0582,208.324,98.99,0.656 action: 2,300 
+76.096          INP_STAT             pHelmIvP:63:waypt_grab successfully reset action! 
+76.096          INP_STAT             pHelmIvP:63:waypt_grab state: 0,97.1589,31.9345,295.465,0,109.882,41.9376,18.8928,56.1724,85.6985,208.653,98.99,0.654 action: 2,300 
+76.345          INP_STAT             pHelmIvP:64:waypt_grab successfully reset action! 
+76.345          INP_STAT             pHelmIvP:64:waypt_grab state: 0,96.9412,32.1369,295.639,0,109.623,42.2238,18.579,56.478,84.58,209.413,107.79,0.685 action: 2,300 
+76.593          INP_STAT             pHelmIvP:65:waypt_grab successfully reset action! 
+76.593          INP_STAT             pHelmIvP:65:waypt_grab state: 0,96.6189,32.4429,295.886,0,109.236,42.6517,18.1068,56.938,84.2336,209.753,107.79,0.684 action: 2,300 
+76.847          INP_STAT             pHelmIvP:66:waypt_grab successfully reset action! 
+76.847          INP_STAT             pHelmIvP:66:waypt_grab state: 0,96.4063,32.649,296.044,0,108.978,42.9365,17.7903,57.2463,83.2703,210.642,116.74,0.714 action: 2,300 
+77.088          INP_STAT             pHelmIvP:67:waypt_grab successfully reset action! 
+77.089          INP_STAT             pHelmIvP:67:waypt_grab state: 0,96.0921,32.9598,296.268,0,108.594,43.3615,17.3152,57.7093,82.9381,210.994,116.74,0.712 action: 2,300 
+77.349          INP_STAT             pHelmIvP:68:waypt_grab successfully reset action! 
+77.349          INP_STAT             pHelmIvP:68:waypt_grab state: 0,95.885,33.1689,296.411,0,108.339,43.6443,16.9972,58.0192,82.1637,211.983,125.93,0.743 action: 2,300 
+77.597          INP_STAT             pHelmIvP:69:waypt_grab successfully reset action! 
+77.597          INP_STAT             pHelmIvP:69:waypt_grab state: 0,95.5796,33.4834,296.614,0,107.959,44.0655,16.521,58.4834,81.8477,212.346,125.93,0.741 action: 2,300 
+77.847          INP_STAT             pHelmIvP:70:waypt_grab successfully reset action! 
+77.847          INP_STAT             pHelmIvP:70:waypt_grab state: 0,95.3785,33.6947,296.743,0,107.706,44.3456,16.2027,58.7937,81.2984,213.408,135.6,0.773 action: 2,300 
+78.095          INP_STAT             pHelmIvP:71:waypt_grab successfully reset action! 
+78.095          INP_STAT             pHelmIvP:71:waypt_grab state: 0,95.0809,34.0136,296.866,0,107.329,44.7643,15.7242,59.2602,80.9984,213.782,135.6,0.77 action: 2,300 
+78.350          INP_STAT             pHelmIvP:72:waypt_grab successfully reset action! 
+78.350          INP_STAT             pHelmIvP:72:waypt_grab state: 0,94.8849,34.2278,297.043,0,107.078,45.0429,15.4044,59.5721,80.7006,214.882,146.01,0.805 action: 2,300 
+78.598          INP_STAT             pHelmIvP:73:waypt_grab successfully reset action! 
+78.598          INP_STAT             pHelmIvP:73:waypt_grab state: 0,94.5946,34.5514,297.211,0,106.702,45.4599,14.9235,60.0411,80.4167,215.265,146.01,0.802 action: 2,300 
+78.849          INP_STAT             pHelmIvP:74:waypt_grab successfully reset action! 
+78.849          INP_STAT             pHelmIvP:74:waypt_grab state: 0,94.4039,34.7682,297.317,0,106.453,45.7368,14.6027,60.354,80.3855,216.367,157.07,0.84 action: 2,300 
+79.096          INP_STAT             pHelmIvP:75:waypt_grab successfully reset action! 
+79.096          INP_STAT             pHelmIvP:75:waypt_grab state: 0,94.2149,34.9863,297.419,0,106.204,46.0135,14.2812,60.6677,80.2068,216.626,157.07,0.838 action: 2,300 
+79.354          INP_STAT             pHelmIvP:76:waypt_grab successfully reset action! 
+79.354          INP_STAT             pHelmIvP:76:waypt_grab state: 0,93.9356,35.3151,297.564,0,105.832,46.427,13.7986,61.1385,80.358,217.818,168.82,0.878 action: 2,300 
+79.604          INP_STAT             pHelmIvP:77:waypt_grab successfully reset action! 
+79.604          INP_STAT             pHelmIvP:77:waypt_grab state: 0,93.7519,35.5355,297.656,0,105.584,46.702,13.4765,61.4528,80.1904,218.081,168.82,0.876 action: 2,300 
+79.852          INP_STAT             pHelmIvP:78:waypt_grab successfully reset action! 
+79.852          INP_STAT             pHelmIvP:78:waypt_grab state: 0,93.4802,35.868,297.788,0,105.215,47.1134,12.9928,61.9248,80.5976,219.183,181.28,0.919 action: 2,300 
+80.105          INP_STAT             pHelmIvP:79:waypt_grab successfully reset action! 
+80.105          INP_STAT             pHelmIvP:79:waypt_grab state: 0,93.3015,36.0909,297.872,0,104.969,47.3871,12.6699,62.2399,80.4404,219.449,181.28,0.917 action: 2,300 
+80.359          INP_STAT             pHelmIvP:80:waypt_grab successfully reset action! 
+80.359          INP_STAT             pHelmIvP:80:waypt_grab state: 0,93.0371,36.4272,297.992,0,104.601,47.7969,12.1848,62.7134,81.0852,220.412,194.44,0.965 action: 2,300 
+80.608          INP_STAT             pHelmIvP:81:waypt_grab successfully reset action! 
+80.608          INP_STAT             pHelmIvP:81:waypt_grab state: 0,92.8633,36.6525,298.068,0,104.356,48.0694,11.8612,63.0292,80.9373,220.678,194.44,0.963 action: 2,300 
+80.860          INP_STAT             pHelmIvP:82:waypt_grab successfully reset action! 
+80.860          INP_STAT             pHelmIvP:82:waypt_grab state: 0,92.6058,36.9928,298.177,0,103.989,48.4782,11.3744,63.5044,81.9323,221.614,196.99,0.966 action: 2,300 
+81.112          INP_STAT             pHelmIvP:83:waypt_grab successfully reset action! 
+81.112          INP_STAT             pHelmIvP:83:waypt_grab state: 0,92.4369,37.2204,298.246,0,103.746,48.7496,11.0501,63.821,81.7937,221.88,196.99,0.964 action: 2,300 
+81.363          INP_STAT             pHelmIvP:84:waypt_grab successfully reset action! 
+81.363          INP_STAT             pHelmIvP:84:waypt_grab state: 0,92.187,37.5637,298.344,0,103.381,49.1562,10.5632,64.2963,82.9087,222.818,197.38,0.958 action: 2,300 
+81.615          INP_STAT             pHelmIvP:85:waypt_grab successfully reset action! 
+81.615          INP_STAT             pHelmIvP:85:waypt_grab state: 0,92.0229,37.7936,298.407,0,103.139,49.4267,10.2384,64.6135,82.7792,223.083,197.38,0.956 action: 2,300 
+81.865          INP_STAT             pHelmIvP:86:waypt_grab successfully reset action! 
+81.865          INP_STAT             pHelmIvP:86:waypt_grab state: 0,91.7801,38.1404,298.496,0,102.775,49.8321,9.75039,65.09,83.8965,223.946,200.72,0.963 action: 2,300 
+82.113          INP_STAT             pHelmIvP:87:waypt_grab successfully reset action! 
+82.113          INP_STAT             pHelmIvP:87:waypt_grab state: 0,91.6206,38.3727,298.553,0,102.534,50.1019,9.42487,65.4079,83.7756,224.21,200.72,0.961 action: 2,300 
+82.369          INP_STAT             pHelmIvP:88:waypt_grab successfully reset action! 
+82.369          INP_STAT             pHelmIvP:88:waypt_grab state: 0,91.3851,38.7225,298.634,0,102.172,50.5056,8.93654,65.8848,84.8904,224.971,204.38,0.971 action: 2,300 
+82.619          INP_STAT             pHelmIvP:89:waypt_grab successfully reset action! 
+82.619          INP_STAT             pHelmIvP:89:waypt_grab state: 0,91.2304,38.9568,298.686,0,101.931,50.7744,8.61077,66.2029,84.7774,225.233,204.38,0.969 action: 2,300 
+82.868          INP_STAT             pHelmIvP:90:waypt_grab successfully reset action! 
+82.868          INP_STAT             pHelmIvP:90:waypt_grab state: 0,91.0017,39.3102,298.76,0,101.57,51.1776,8.12115,66.6811,85.8761,225.911,207.65,0.977 action: 2,300 
+83.111          INP_STAT             pHelmIvP:91:waypt_grab successfully reset action! 
+83.111          INP_STAT             pHelmIvP:91:waypt_grab state: 0,90.8515,39.547,298.806,0,101.33,51.4461,7.79443,67.0003,85.7702,226.172,207.65,0.975 action: 2,300 
+83.372          INP_STAT             pHelmIvP:92:waypt_grab successfully reset action! 
+83.372          INP_STAT             pHelmIvP:92:waypt_grab state: 0,90.6302,39.9029,298.873,0,100.971,51.8474,7.30513,67.4782,86.8625,226.769,210.94,0.984 action: 2,300 
+83.620          INP_STAT             pHelmIvP:93:waypt_grab successfully reset action! 
+83.620          INP_STAT             pHelmIvP:93:waypt_grab state: 0,90.4849,40.1414,298.916,0,100.731,52.1149,6.9785,67.7972,86.7634,227.028,210.94,0.982 action: 2,300 
+83.872          INP_STAT             pHelmIvP:94:waypt_grab successfully reset action! 
+83.873          INP_STAT             pHelmIvP:94:waypt_grab state: 0,90.2701,40.5012,298.977,0,100.372,52.5163,6.48746,68.2769,87.8733,227.558,214.36,0.992 action: 2,300 
+84.121          INP_STAT             pHelmIvP:95:waypt_grab successfully reset action! 
+84.121          INP_STAT             pHelmIvP:95:waypt_grab state: 0,90.1292,40.742,299.015,0,100.133,52.7835,6.16009,68.5967,87.7802,227.815,214.36,0.99 action: 2,300 
+84.366          INP_STAT             pHelmIvP:96:waypt_grab successfully reset action! 
+84.366          INP_STAT             pHelmIvP:96:waypt_grab state: 0,89.9215,41.1046,299.07,0,99.7751,53.1838,5.66882,69.0767,88.898,228.283,217.97,1 action: 2,300 
+84.620          INP_STAT             pHelmIvP:97:waypt_grab successfully reset action! 
+84.620          INP_STAT             pHelmIvP:97:waypt_grab state: 0,89.7853,41.3473,299.105,0,99.5367,53.4504,5.34118,69.3968,88.8105,228.538,217.97,0.999 action: 2,300 
+84.867          INP_STAT             pHelmIvP:98:waypt_grab successfully reset action! 
+84.867          INP_STAT             pHelmIvP:98:waypt_grab state: 0,89.5845,41.7128,299.156,0,99.1795,53.85,4.84937,69.8773,89.9323,228.938,221.96,1 action: 2,300 
+85.124          INP_STAT             pHelmIvP:99:waypt_grab successfully reset action! 
+85.124          INP_STAT             pHelmIvP:99:waypt_grab state: 0,89.453,41.9574,299.187,0,98.9416,54.116,4.5215,70.1976,89.8499,229.191,221.96,1 action: 2,300 
+85.374          INP_STAT             pHelmIvP:100:waypt_grab successfully reset action! 
+85.374          INP_STAT             pHelmIvP:100:waypt_grab state: 0,89.2593,42.3254,299.233,0,98.5855,54.5146,4.02974,70.6781,90.9718,229.516,226.57,1 action: 2,300 
+85.628          INP_STAT             pHelmIvP:101:waypt_grab successfully reset action! 
+85.628          INP_STAT             pHelmIvP:101:waypt_grab state: 0,89.1324,42.5718,299.262,0,98.3481,54.7802,3.70152,70.9988,90.8939,229.766,226.57,1 action: 2,300 
+85.880          INP_STAT             pHelmIvP:102:waypt_grab successfully reset action! 
+85.880          INP_STAT             pHelmIvP:102:waypt_grab state: 0,88.9453,42.9432,299.303,0,97.992,55.1787,3.20862,71.4805,91.9769,230.017,232.35,1 action: 2,300 
+86.124          INP_STAT             pHelmIvP:103:waypt_grab successfully reset action! 
+86.124          INP_STAT             pHelmIvP:103:waypt_grab state: 0,88.823,43.1915,299.329,0,97.755,55.4441,2.8801,71.8015,91.903,230.265,232.35,1 action: 2,300 
+86.382          INP_STAT             pHelmIvP:104:waypt_grab successfully reset action! 
+86.382          INP_STAT             pHelmIvP:104:waypt_grab state: 0,88.6429,43.5655,299.367,0,97.3994,55.8421,2.38673,72.2836,92.9638,230.43,237.98,1 action: 2,300 
+86.625          INP_STAT             pHelmIvP:105:waypt_grab successfully reset action! 
+86.625          INP_STAT             pHelmIvP:105:waypt_grab state: 0,88.5254,43.8152,299.391,0,97.1631,56.1066,2.05851,72.6044,92.8933,230.675,237.98,1 action: 2,300 
+86.888          INP_STAT             pHelmIvP:106:waypt_grab successfully reset action! 
+86.888          INP_STAT             pHelmIvP:106:waypt_grab state: 0,88.3522,44.1918,299.425,0,96.8082,56.5041,1.56492,73.0867,93.9389,230.771,243.4,0.983 action: 2,300 
+87.123          INP_STAT             pHelmIvP:107:waypt_grab successfully reset action! 
+87.124          INP_STAT             pHelmIvP:107:waypt_grab state: 0,88.239,44.4439,299.447,0,96.5715,56.7692,1.23542,73.4087,93.8709,231.014,243.4,0.983 action: 2,300 
+87.401          INP_STAT             pHelmIvP:108:waypt_grab successfully reset action! 
+87.401          INP_STAT             pHelmIvP:108:waypt_grab state: 1,88.0728,44.8231,299.478,0,96.217,57.1662,0.741439,73.8915,94.8764,231.03,248.86,0.96 action: 2,300 
+87.638          INP_STAT             pHelmIvP:109:waypt_grab successfully reset action! 
+87.638          INP_STAT             pHelmIvP:109:waypt_grab state: 1,87.9643,45.0765,299.497,0,95.981,57.4306,0.412256,74.2132,94.8107,231.271,248.86,0.96 action: 2,300 
+87.880          INP_STAT             pHelmIvP:110:waypt_grab successfully reset action! 
+87.880          INP_STAT             pHelmIvP:110:waypt_grab state: 1,87.8053,45.4575,299.525,0,95.6274,57.8267,0.0813269,74.6956,95.7562,231.224,254.33,0.938 action: 2,300 
+88.136          INP_STAT             pHelmIvP:111:waypt_grab successfully reset action! 
+88.136          INP_STAT             pHelmIvP:111:waypt_grab state: 1,87.7014,45.7127,299.543,0,95.3915,58.091,0.410957,75.0178,95.6921,231.463,254.33,0.938 action: 2,300 
+88.380          INP_STAT             pHelmIvP:112:waypt_grab successfully reset action! 
+88.380          INP_STAT             pHelmIvP:112:waypt_grab state: 1,87.549,46.0969,299.569,0,95.0375,58.4876,0.905949,75.5016,96.5703,231.361,260.12,0.914 action: 2,300 
+88.638          INP_STAT             pHelmIvP:113:waypt_grab successfully reset action! 
+88.638          INP_STAT             pHelmIvP:113:waypt_grab state: 1,87.4501,46.3531,299.585,0,94.8023,58.7512,1.23506,75.8232,96.5076,231.597,260.12,0.914 action: 2,300 
+88.894          INP_STAT             pHelmIvP:114:waypt_grab successfully reset action! 
+88.894          INP_STAT             pHelmIvP:114:waypt_grab state: 1,87.3046,46.7399,299.608,0,94.4484,59.1477,1.73064,76.3076,97.2825,231.439,266.51,0.887 action: 2,300 
+89.142          INP_STAT             pHelmIvP:115:waypt_grab successfully reset action! 
+89.142          INP_STAT             pHelmIvP:115:waypt_grab state: 1,87.21,46.9982,299.623,0,94.2128,59.4118,2.06078,76.6303,97.2204,231.675,266.51,0.887 action: 2,300 
+89.388          INP_STAT             pHelmIvP:116:waypt_grab successfully reset action! 
+89.388          INP_STAT             pHelmIvP:116:waypt_grab state: 1,87.0719,47.3861,299.644,0,93.8601,59.807,2.55524,77.1136,97.8861,231.465,273.59,0.858 action: 2,300 
+89.639          INP_STAT             pHelmIvP:117:waypt_grab successfully reset action! 
+89.639          INP_STAT             pHelmIvP:117:waypt_grab state: 1,86.9821,47.6455,299.657,0,93.625,60.0705,2.88509,77.436,97.8245,231.699,273.59,0.858 action: 2,300 
+89.898          INP_STAT             pHelmIvP:118:waypt_grab successfully reset action! 
+89.898          INP_STAT             pHelmIvP:118:waypt_grab state: 1,86.8512,48.0351,299.67,0,93.2731,60.465,3.37923,77.919,98.3466,231.446,281.8,0.824 action: 2,300 
+90.144          INP_STAT             pHelmIvP:119:waypt_grab successfully reset action! 
+90.144          INP_STAT             pHelmIvP:119:waypt_grab state: 1,86.7661,48.2961,299.689,0,93.0379,60.7286,3.70956,78.2419,98.285,231.679,281.8,0.824 action: 2,300 
+90.393          INP_STAT             pHelmIvP:120:waypt_grab successfully reset action! 
+90.393          INP_STAT             pHelmIvP:120:waypt_grab state: 1,86.6828,48.5576,299.7,0,92.8029,60.9921,4.03994,78.5649,98.6623,231.282,291.61,0.783 action: 2,300 
+90.638          INP_STAT             pHelmIvP:121:waypt_grab successfully reset action! 
+90.638          INP_STAT             pHelmIvP:121:waypt_grab state: 1,86.5619,48.9494,299.717,0,92.4517,61.3858,4.53376,79.0476,98.5694,231.629,291.61,0.783 action: 2,300 
+90.892          INP_STAT             pHelmIvP:122:waypt_grab successfully reset action! 
+90.892          INP_STAT             pHelmIvP:122:waypt_grab state: 1,86.4836,49.2113,299.728,0,92.2175,61.6484,4.86316,79.3696,98.7711,231.277,295.22,0.768 action: 2,300 
+91.141          INP_STAT             pHelmIvP:123:waypt_grab successfully reset action! 
+91.141          INP_STAT             pHelmIvP:123:waypt_grab state: 1,86.3695,49.6058,299.743,0,91.8657,62.0428,5.35834,79.8536,98.6782,231.624,295.22,0.768 action: 2,300 
+91.402          INP_STAT             pHelmIvP:124:waypt_grab successfully reset action! 
+91.402          INP_STAT             pHelmIvP:124:waypt_grab state: 1,86.2958,49.8693,299.753,0,91.6314,62.3056,5.68829,80.1762,98.8761,231.1,299.53,0.75 action: 2,300 
+91.646          INP_STAT             pHelmIvP:125:waypt_grab successfully reset action! 
+91.646          INP_STAT             pHelmIvP:125:waypt_grab state: 1,86.1887,50.266,299.767,0,91.2794,62.7002,6.18413,80.6609,98.7816,231.447,299.53,0.75 action: 2,300 
+91.906          INP_STAT             pHelmIvP:126:waypt_grab successfully reset action! 
+91.906          INP_STAT             pHelmIvP:126:waypt_grab state: 1,86.1196,50.5311,299.775,0,91.0447,62.9634,6.51488,80.9842,98.8698,230.931,304.93,0.728 action: 2,300 
+92.147          INP_STAT             pHelmIvP:127:waypt_grab successfully reset action! 
+92.147          INP_STAT             pHelmIvP:127:waypt_grab state: 1,86.0195,50.9295,299.788,0,90.6928,63.358,7.01101,81.4692,98.7737,231.279,304.93,0.728 action: 2,300 
+92.407          INP_STAT             pHelmIvP:128:waypt_grab successfully reset action! 
+92.407          INP_STAT             pHelmIvP:128:waypt_grab state: 1,85.9553,51.1953,299.796,0,90.4586,63.6207,7.34136,81.7921,98.7395,230.778,310.51,0.705 action: 2,300 
+92.655          INP_STAT             pHelmIvP:129:waypt_grab successfully reset action! 
+92.655          INP_STAT             pHelmIvP:129:waypt_grab state: 1,85.8625,51.5949,299.807,0,90.1072,64.0148,7.83718,82.2768,98.6421,231.126,310.51,0.705 action: 2,300 
+92.907          INP_STAT             pHelmIvP:130:waypt_grab successfully reset action! 
+92.907          INP_STAT             pHelmIvP:130:waypt_grab state: 1,85.8029,51.8624,299.815,0,89.8724,64.2781,8.16854,82.6008,98.4821,230.624,316.45,0.68 action: 2,300 
+93.155          INP_STAT             pHelmIvP:131:waypt_grab successfully reset action! 
+93.155          INP_STAT             pHelmIvP:131:waypt_grab state: 1,85.7173,52.2635,299.825,0,89.5211,64.6722,8.66458,83.0857,98.3833,230.972,316.45,0.68 action: 2,300 
+93.408          INP_STAT             pHelmIvP:132:waypt_grab successfully reset action! 
+93.409          INP_STAT             pHelmIvP:132:waypt_grab state: 1,85.6628,52.5305,299.831,0,89.2876,64.9341,8.99436,83.4081,98.0944,230.488,322.91,0.653 action: 2,300 
+93.653          INP_STAT             pHelmIvP:133:waypt_grab successfully reset action! 
+93.653          INP_STAT             pHelmIvP:133:waypt_grab state: 1,85.5844,52.9327,299.841,0,88.9365,65.3278,9.49025,83.8929,97.9943,230.837,322.91,0.653 action: 2,300 
+93.906          INP_STAT             pHelmIvP:134:waypt_grab successfully reset action! 
+93.906          INP_STAT             pHelmIvP:134:waypt_grab state: 1,85.5344,53.2019,299.847,0,88.702,65.5909,9.82167,84.2169,97.564,230.388,330.37,0.622 action: 2,300 
+94.159          INP_STAT             pHelmIvP:135:waypt_grab successfully reset action! 
+94.159          INP_STAT             pHelmIvP:135:waypt_grab state: 1,85.4632,53.6054,299.855,0,88.351,65.9846,10.3178,84.7019,97.463,230.74,330.37,0.622 action: 2,300 
+94.414          INP_STAT             pHelmIvP:136:waypt_grab successfully reset action! 
+94.414          INP_STAT             pHelmIvP:136:waypt_grab state: 1,85.4181,53.8747,299.861,0,88.1171,66.247,10.6485,85.0252,96.8936,230.341,339.59,0.584 action: 2,300 
+94.660          INP_STAT             pHelmIvP:137:waypt_grab successfully reset action! 
+94.660          INP_STAT             pHelmIvP:137:waypt_grab state: 1,85.3541,54.2797,299.869,0,87.7659,66.641,11.1453,85.5108,96.7922,230.696,339.59,0.584 action: 2,300 
+94.912          INP_STAT             pHelmIvP:138:waypt_grab successfully reset action! 
+94.912          INP_STAT             pHelmIvP:138:waypt_grab state: 1,85.3139,54.5493,299.874,0,87.5324,66.9029,11.4755,85.8337,96.0174,230.293,344.71,0.563 action: 2,300 
+95.165          INP_STAT             pHelmIvP:139:waypt_grab successfully reset action! 
+95.165          INP_STAT             pHelmIvP:139:waypt_grab state: 1,85.2572,54.9545,299.881,0,87.1819,67.2961,11.9714,86.3185,95.9159,230.649,344.71,0.563 action: 2,300 
+95.416          INP_STAT             pHelmIvP:140:waypt_grab successfully reset action! 
+95.416          INP_STAT             pHelmIvP:140:waypt_grab state: 1,85.2218,55.2244,299.885,0,86.9487,67.5578,12.3015,86.6412,95.0432,230.248,348.41,0.547 action: 2,300 
+95.664          INP_STAT             pHelmIvP:141:waypt_grab successfully reset action! 
+95.664          INP_STAT             pHelmIvP:141:waypt_grab state: 1,85.1724,55.6301,299.892,0,86.5986,67.9505,12.7969,87.1256,94.9414,230.607,348.41,0.547 action: 2,300 
+95.916          INP_STAT             pHelmIvP:142:waypt_grab successfully reset action! 
+95.916          INP_STAT             pHelmIvP:142:waypt_grab state: 1,85.1419,55.9008,299.896,0,86.3653,68.2123,13.1273,87.4485,94.0129,230.252,353.23,0.527 action: 2,300 
+96.161          INP_STAT             pHelmIvP:143:waypt_grab successfully reset action! 
+96.161          INP_STAT             pHelmIvP:143:waypt_grab state: 1,85.0997,56.3075,299.901,0,86.0151,68.6052,13.6232,87.9334,93.9112,230.616,353.23,0.527 action: 2,300 
+96.418          INP_STAT             pHelmIvP:144:waypt_grab successfully reset action! 
+96.418          INP_STAT             pHelmIvP:144:waypt_grab state: 1,85.0739,56.5787,299.905,0,85.7817,68.867,13.9536,88.2564,92.9279,230.317,358.33,0.506 action: 2,300 
+96.669          INP_STAT             pHelmIvP:145:waypt_grab successfully reset action! 
+96.669          INP_STAT             pHelmIvP:145:waypt_grab state: 1,85.039,56.9858,299.91,0,85.4318,69.2596,14.4493,88.7411,92.827,230.685,358.33,0.506 action: 2,300 
+96.920          INP_STAT             pHelmIvP:146:waypt_grab successfully reset action! 
+96.920          INP_STAT             pHelmIvP:146:waypt_grab state: 1,85.0181,57.258,299.914,0,85.1979,69.522,14.7806,89.0649,91.7678,230.451,3.81,0.483 action: 2,300 
+97.172          INP_STAT             pHelmIvP:147:waypt_grab successfully reset action! 
+97.172          INP_STAT             pHelmIvP:147:waypt_grab state: 1,84.9904,57.6655,299.919,0,84.8481,69.9145,15.2762,89.5495,91.6685,230.823,3.81,0.483 action: 2,300 
+97.426          INP_STAT             pHelmIvP:148:waypt_grab successfully reset action! 
+97.426          INP_STAT             pHelmIvP:148:waypt_grab state: 1,84.9743,57.9373,299.922,0,84.6149,70.1761,15.6067,89.8726,90.5621,230.653,10,0.458 action: 2,300 
+97.663          INP_STAT             pHelmIvP:149:waypt_grab successfully reset action! 
+97.663          INP_STAT             pHelmIvP:149:waypt_grab state: 1,84.9539,58.3456,299.926,0,84.2649,70.5689,16.1028,90.3576,90.4649,231.031,10,0.458 action: 2,300 
+97.925          INP_STAT             pHelmIvP:150:waypt_grab successfully reset action! 
+97.925          INP_STAT             pHelmIvP:150:waypt_grab state: 1,84.9427,58.6175,299.929,0,84.0318,70.8304,16.4332,90.6806,89.294,230.951,17.37,0.427 action: 2,300 
+98.170          INP_STAT             pHelmIvP:151:waypt_grab successfully reset action! 
+98.170          INP_STAT             pHelmIvP:151:waypt_grab state: 1,84.9295,59.026,299.933,0,83.6819,71.2231,16.9292,91.1656,89.2,231.335,17.37,0.427 action: 2,300 
+98.433          INP_STAT             pHelmIvP:152:waypt_grab successfully reset action! 
+98.433          INP_STAT             pHelmIvP:152:waypt_grab state: 1,84.9231,59.2984,299.935,0,83.4486,71.4849,17.26,91.489,87.9487,231.334,22.61,0.405 action: 2,300 
+98.677          INP_STAT             pHelmIvP:153:waypt_grab successfully reset action! 
+98.677          INP_STAT             pHelmIvP:153:waypt_grab state: 1,84.9172,59.7077,299.939,0,83.0981,71.8781,17.7569,91.9749,87.8587,231.725,22.61,0.405 action: 2,300 
+98.928          INP_STAT             pHelmIvP:154:waypt_grab successfully reset action! 
+98.928          INP_STAT             pHelmIvP:154:waypt_grab state: 1,84.9157,59.9801,299.941,0,82.8649,72.1399,18.0877,92.2983,86.5253,231.787,26.92,0.387 action: 2,300 
+99.183          INP_STAT             pHelmIvP:155:waypt_grab successfully reset action! 
+99.183          INP_STAT             pHelmIvP:155:waypt_grab state: 1,84.917,60.3886,299.945,0,82.5152,72.5323,18.5837,92.7832,86.4403,232.184,26.92,0.387 action: 2,300 
+99.432          INP_STAT             pHelmIvP:156:waypt_grab successfully reset action! 
+99.432          INP_STAT             pHelmIvP:156:waypt_grab state: 1,84.9203,60.661,299.947,0,82.282,72.7939,18.9144,93.1065,85.1221,232.33,31.75,0.367 action: 2,300 
+99.671          INP_STAT             pHelmIvP:157:waypt_grab successfully reset action! 
+99.671          INP_STAT             pHelmIvP:157:waypt_grab state: 1,84.9289,61.0701,299.95,0,81.9318,73.1869,19.4112,93.5923,85.0428,232.735,31.75,0.367 action: 2,300 
+99.932          INP_STAT             pHelmIvP:158:waypt_grab successfully reset action! 
+99.932          INP_STAT             pHelmIvP:158:waypt_grab state: 1,84.9371,61.3426,299.951,0,81.6985,73.4488,19.7423,93.9159,83.7185,232.957,36.75,0.346 action: 2,300 
+100.178         INP_STAT             pHelmIvP:159:waypt_grab successfully reset action! 
+100.178         INP_STAT             pHelmIvP:159:waypt_grab state: 1,84.953,61.7514,299.954,0,81.3484,73.8416,20.239,94.4015,83.6458,233.369,36.75,0.346 action: 2,300 
+100.436         INP_STAT             pHelmIvP:160:waypt_grab successfully reset action! 
+100.436         INP_STAT             pHelmIvP:160:waypt_grab state: 1,84.966,62.0243,299.956,0,81.1146,74.104,20.5707,94.7259,82.3443,233.693,42.06,0.324 action: 2,300 
+100.659         INP_STAT             pHelmIvP:161:waypt_grab successfully reset action! 
+100.659         INP_STAT             pHelmIvP:161:waypt_grab state: 1,84.9891,62.4328,299.958,0,80.7645,74.4969,21.0675,95.2116,82.2794,234.112,42.06,0.324 action: 2,120 
+100.939         INP_STAT             pHelmIvP:162:waypt_grab successfully reset action! 
+100.939         INP_STAT             pHelmIvP:162:waypt_grab state: 1,84.9768,62.7,291.36,0,80.5119,74.7759,21.3744,95.5105,80.9823,234.528,47.8,0.264 action: 2,300 
+101.183         INP_STAT             pHelmIvP:163:waypt_grab successfully reset action! 
+101.183         INP_STAT             pHelmIvP:163:waypt_grab state: 1,84.8857,63.088,287.822,0,80.0851,75.237,21.7728,95.8954,80.8104,234.922,47.8,0.25 action: 2,300 
+101.439         INP_STAT             pHelmIvP:164:waypt_grab successfully reset action! 
+101.439         INP_STAT             pHelmIvP:164:waypt_grab state: 1,84.8272,63.3471,288.407,0,79.8007,75.5443,22.0384,96.152,79.5159,235.427,54.35,0.225 action: 2,300 
+101.683         INP_STAT             pHelmIvP:165:waypt_grab successfully reset action! 
+101.683         INP_STAT             pHelmIvP:165:waypt_grab state: 1,84.7511,63.7377,290.029,0,79.3795,76.0004,22.4435,96.5438,79.361,235.832,54.35,0.231 action: 2,300 
+101.941         INP_STAT             pHelmIvP:166:waypt_grab successfully reset action! 
+101.941         INP_STAT             pHelmIvP:166:waypt_grab state: 1,84.7175,63.9922,292.028,0,79.1161,76.2872,22.7158,96.8077,78.1802,236.467,62.11,0.255 action: 2,300 
+102.191         INP_STAT             pHelmIvP:167:waypt_grab successfully reset action! 
+102.191         INP_STAT             pHelmIvP:167:waypt_grab state: 1,84.6804,64.3939,292.442,0,78.7104,76.7306,23.1531,97.2322,78.0658,236.895,62.11,0.253 action: 2,300 
+102.446         INP_STAT             pHelmIvP:168:waypt_grab successfully reset action! 
+102.446         INP_STAT             pHelmIvP:168:waypt_grab state: 1,84.66,64.6674,292.708,0,78.4362,77.0305,23.4521,97.5226,76.9242,237.683,67.49,0.27 action: 2,300 
+102.686         INP_STAT             pHelmIvP:169:waypt_grab successfully reset action! 
+102.686         INP_STAT             pHelmIvP:169:waypt_grab state: 1,84.6364,65.0789,293.095,0,78.0266,77.4791,23.904,97.9615,76.827,238.131,67.49,0.268 action: 2,300 
+102.944         INP_STAT             pHelmIvP:170:waypt_grab successfully reset action! 
+102.944         INP_STAT             pHelmIvP:170:waypt_grab state: 1,84.6253,65.354,293.358,0,77.7545,77.7772,24.2075,98.2563,75.7491,239.039,71.98,0.28 action: 2,300 
+103.191         INP_STAT             pHelmIvP:171:waypt_grab successfully reset action! 
+103.191         INP_STAT             pHelmIvP:171:waypt_grab state: 1,84.6159,65.7666,293.614,0,77.3494,78.2218,24.6646,98.7007,75.6729,239.496,71.98,0.277 action: 2,300 
+103.441         INP_STAT             pHelmIvP:172:waypt_grab successfully reset action! 
+103.441         INP_STAT             pHelmIvP:172:waypt_grab state: 1,84.6142,66.0409,293.979,0,77.0816,78.5158,24.97,98.9976,74.7286,240.489,77.22,0.292 action: 2,300 
+103.695         INP_STAT             pHelmIvP:173:waypt_grab successfully reset action! 
+103.695         INP_STAT             pHelmIvP:173:waypt_grab state: 1,84.6162,66.3159,294.211,0,76.8145,78.8094,25.2773,99.2964,74.6914,240.799,77.22,0.29 action: 2,300 
+103.946         INP_STAT             pHelmIvP:174:waypt_grab successfully reset action! 
+103.946         INP_STAT             pHelmIvP:174:waypt_grab state: 1,84.6257,66.7282,294.54,0,76.4162,79.2476,25.74,99.7465,73.8466,242.03,82.55,0.304 action: 2,300 
+104.197         INP_STAT             pHelmIvP:175:waypt_grab successfully reset action! 
+104.197         INP_STAT             pHelmIvP:175:waypt_grab state: 1,84.6364,67.0032,294.75,0,76.1519,79.5385,26.0499,100.048,73.8241,242.345,82.55,0.302 action: 2,300 
+104.452         INP_STAT             pHelmIvP:176:waypt_grab successfully reset action! 
+104.452         INP_STAT             pHelmIvP:176:waypt_grab state: 1,84.6588,67.4153,295.049,0,75.7577,79.973,26.5163,100.502,73.1496,243.645,88.28,0.316 action: 2,300 
+104.695         INP_STAT             pHelmIvP:177:waypt_grab successfully reset action! 
+104.695         INP_STAT             pHelmIvP:177:waypt_grab state: 1,84.6779,67.6894,295.238,0,75.4965,80.2609,26.8279,100.805,72.6293,244.859,94.41,0.333 action: 2,300 
+104.951         INP_STAT             pHelmIvP:178:waypt_grab successfully reset action! 
+104.952         INP_STAT             pHelmIvP:178:waypt_grab state: 1,84.7126,68.1006,295.508,0,75.1064,80.6915,27.2973,101.262,72.6343,245.34,94.41,0.33 action: 2,300 
+105.198         INP_STAT             pHelmIvP:179:waypt_grab successfully reset action! 
+105.198         INP_STAT             pHelmIvP:179:waypt_grab state: 1,84.7397,68.3742,295.68,0,74.8478,80.9771,27.6108,101.568,72.6421,245.659,94.41,0.328 action: 2,300 
+105.451         INP_STAT             pHelmIvP:180:waypt_grab successfully reset action! 
+105.451         INP_STAT             pHelmIvP:180:waypt_grab state: 1,84.7863,68.7845,295.925,0,74.4611,81.4044,28.0831,102.028,72.3357,247.07,101.42,0.346 action: 2,300 
+105.698         INP_STAT             pHelmIvP:181:waypt_grab successfully reset action! 
+105.698         INP_STAT             pHelmIvP:181:waypt_grab state: 1,84.8211,69.0576,296.08,0,74.2046,81.6882,28.3987,102.335,72.3586,247.391,101.42,0.344 action: 2,300 
+105.956         INP_STAT             pHelmIvP:182:waypt_grab successfully reset action! 
+105.956         INP_STAT             pHelmIvP:182:waypt_grab state: 1,84.8789,69.4664,296.302,0,73.8217,82.1119,28.8729,102.797,72.2685,248.819,109.73,0.368 action: 2,300 
+106.206         INP_STAT             pHelmIvP:183:waypt_grab successfully reset action! 
+106.206         INP_STAT             pHelmIvP:183:waypt_grab state: 1,84.9211,69.7384,296.443,0,73.5674,82.3935,29.1899,103.106,72.3519,250.158,114.29,0.376 action: 2,300 
+106.459         INP_STAT             pHelmIvP:184:waypt_grab successfully reset action! 
+106.459         INP_STAT             pHelmIvP:184:waypt_grab state: 1,84.9899,70.1467,296.645,0,73.1866,82.8154,29.6674,103.572,72.4255,250.636,114.29,0.373 action: 2,300 
+106.704         INP_STAT             pHelmIvP:185:waypt_grab successfully reset action! 
+106.704         INP_STAT             pHelmIvP:185:waypt_grab state: 1,85.0394,70.4184,296.773,0,72.9336,83.0959,29.9865,103.883,72.6566,251.976,118.82,0.381 action: 2,300 
+106.959         INP_STAT             pHelmIvP:186:waypt_grab successfully reset action! 
+106.959         INP_STAT             pHelmIvP:186:waypt_grab state: 1,85.1188,70.8256,296.955,0,72.5552,83.5156,30.4665,104.351,72.7528,252.451,118.82,0.378 action: 2,300 
+107.211         INP_STAT             pHelmIvP:187:waypt_grab successfully reset action! 
+107.211         INP_STAT             pHelmIvP:187:waypt_grab state: 1,85.175,71.0956,297.071,0,72.3046,83.7938,30.7862,104.663,73.148,253.736,123.95,0.389 action: 2,300 
+107.462         INP_STAT             pHelmIvP:188:waypt_grab successfully reset action! 
+107.462         INP_STAT             pHelmIvP:188:waypt_grab state: 1,85.2644,71.4998,297.236,0,71.9297,84.21,31.2666,105.131,73.2652,254.203,123.95,0.386 action: 2,300 
+107.711         INP_STAT             pHelmIvP:189:waypt_grab successfully reset action! 
+107.711         INP_STAT             pHelmIvP:189:waypt_grab state: 1,85.3272,71.7686,297.341,0,71.6807,84.4866,31.5873,105.444,73.8069,255.432,129.19,0.398 action: 2,300 
+107.961         INP_STAT             pHelmIvP:190:waypt_grab successfully reset action! 
+107.961         INP_STAT             pHelmIvP:190:waypt_grab state: 1,85.4264,72.1711,297.491,0,71.3081,84.9007,32.0694,105.914,73.9444,255.891,129.19,0.395 action: 2,300 
+108.214         INP_STAT             pHelmIvP:191:waypt_grab successfully reset action! 
+108.214         INP_STAT             pHelmIvP:191:waypt_grab state: 1,85.4959,72.4396,297.587,0,71.0596,85.1771,32.3924,106.229,74.5147,256.887,133.76,0.406 action: 2,300 
+108.463         INP_STAT             pHelmIvP:192:waypt_grab successfully reset action! 
+108.463         INP_STAT             pHelmIvP:192:waypt_grab state: 1,85.6046,72.8405,297.723,0,70.6887,85.5897,32.8764,106.702,74.6697,257.339,133.76,0.403 action: 2,300 
+108.713         INP_STAT             pHelmIvP:193:waypt_grab successfully reset action! 
+108.713         INP_STAT             pHelmIvP:193:waypt_grab state: 1,85.6801,73.1068,297.809,0,70.4422,85.8639,33.1993,107.017,75.4882,258.424,139.77,0.419 action: 2,300 
+108.965         INP_STAT             pHelmIvP:194:waypt_grab successfully reset action! 
+108.965         INP_STAT             pHelmIvP:194:waypt_grab state: 1,85.7982,73.5061,297.933,0,70.0727,86.2753,33.6853,107.491,75.6614,258.867,139.77,0.416 action: 2,300 
+109.220         INP_STAT             pHelmIvP:195:waypt_grab successfully reset action! 
+109.220         INP_STAT             pHelmIvP:195:waypt_grab state: 1,85.8797,73.7709,298.011,0,69.8275,86.5483,34.0088,107.807,76.6102,259.834,146.62,0.437 action: 2,300 
+109.468         INP_STAT             pHelmIvP:196:waypt_grab successfully reset action! 
+109.468         INP_STAT             pHelmIvP:196:waypt_grab state: 1,86.0064,74.167,298.123,0,69.4606,86.9572,34.4949,108.281,76.7992,260.265,146.62,0.434 action: 2,300 
+109.720         INP_STAT             pHelmIvP:197:waypt_grab successfully reset action! 
+109.720         INP_STAT             pHelmIvP:197:waypt_grab state: 1,86.0938,74.4305,298.194,0,69.2163,87.2294,34.8195,108.598,77.8692,261.114,154.72,0.461 action: 2,300 
+109.970         INP_STAT             pHelmIvP:198:waypt_grab successfully reset action! 
+109.970         INP_STAT             pHelmIvP:198:waypt_grab state: 1,86.2288,74.8233,298.295,0,68.8518,87.6357,35.3053,109.073,78.0722,261.534,154.72,0.458 action: 2,300 
+110.221         INP_STAT             pHelmIvP:199:waypt_grab successfully reset action! 
+110.221         INP_STAT             pHelmIvP:199:waypt_grab state: 1,86.3219,75.0852,298.36,0,68.6085,87.907,35.6307,109.39,79.313,262.278,159.99,0.474 action: 2,300 
+110.469         INP_STAT             pHelmIvP:200:waypt_grab successfully reset action! 
+110.469         INP_STAT             pHelmIvP:200:waypt_grab state: 1,86.4652,75.4755,298.452,0,68.2455,88.3119,36.1174,109.865,79.529,262.686,159.99,0.471 action: 2,300 
+110.720         INP_STAT             pHelmIvP:201:waypt_grab successfully reset action! 
+110.720         INP_STAT             pHelmIvP:201:waypt_grab state: 1,86.5634,75.7347,298.51,0,68.0041,88.5813,36.4419,110.182,80.8689,263.346,164.19,0.483 action: 2,300 
+110.974         INP_STAT             pHelmIvP:202:waypt_grab successfully reset action! 
+110.974         INP_STAT             pHelmIvP:202:waypt_grab state: 1,86.7148,76.1224,298.594,0,67.6425,88.9849,36.9294,110.658,81.0967,263.743,164.19,0.48 action: 2,300 
+111.221         INP_STAT             pHelmIvP:203:waypt_grab successfully reset action! 
+111.221         INP_STAT             pHelmIvP:203:waypt_grab state: 1,86.8184,76.3799,298.647,0,67.4019,89.2534,37.2544,110.976,82.464,264.304,169.2,0.496 action: 2,300 
+111.476         INP_STAT             pHelmIvP:204:waypt_grab successfully reset action! 
+111.476         INP_STAT             pHelmIvP:204:waypt_grab state: 1,86.9779,76.7655,298.723,0,67.041,89.6565,37.7433,111.453,82.7027,264.691,169.2,0.493 action: 2,300 
+111.726         INP_STAT             pHelmIvP:205:waypt_grab successfully reset action! 
+111.726         INP_STAT             pHelmIvP:205:waypt_grab state: 1,87.0868,77.0216,298.771,0,66.8008,89.9247,38.0693,111.772,84.1039,265.145,174.41,0.512 action: 2,300 
+111.975         INP_STAT             pHelmIvP:206:waypt_grab successfully reset action! 
+111.975         INP_STAT             pHelmIvP:206:waypt_grab state: 1,87.254,77.4043,298.84,0,66.4412,90.3265,38.5586,112.25,84.3517,265.521,174.41,0.509 action: 2,300 
+112.223         INP_STAT             pHelmIvP:207:waypt_grab successfully reset action! 
+112.223         INP_STAT             pHelmIvP:207:waypt_grab state: 1,87.3681,77.6589,298.883,0,66.2014,90.5944,38.8855,112.569,85.7717,265.873,179.94,0.529 action: 2,300 
+112.478         INP_STAT             pHelmIvP:208:waypt_grab successfully reset action! 
+112.478         INP_STAT             pHelmIvP:208:waypt_grab state: 1,87.5429,78.039,298.946,0,65.8426,90.9954,39.3755,113.048,86.0275,266.239,179.94,0.526 action: 2,300 
+112.727         INP_STAT             pHelmIvP:209:waypt_grab successfully reset action! 
+112.727         INP_STAT             pHelmIvP:209:waypt_grab state: 1,87.6622,78.2922,298.986,0,65.6031,91.2632,39.7033,113.368,87.4421,266.493,186.03,0.55 action: 2,300 
+112.979         INP_STAT             pHelmIvP:210:waypt_grab successfully reset action! 
+112.979         INP_STAT             pHelmIvP:210:waypt_grab state: 1,87.8449,78.6706,299.043,0,65.244,91.6646,40.1954,113.849,87.7055,266.852,186.03,0.547 action: 2,300 
+113.233         INP_STAT             pHelmIvP:211:waypt_grab successfully reset action! 
+113.233         INP_STAT             pHelmIvP:211:waypt_grab state: 1,87.969,78.9218,299.079,0,65.0051,91.9318,40.5235,114.169,89.1019,267,193.02,0.575 action: 2,300 
+113.485         INP_STAT             pHelmIvP:212:waypt_grab successfully reset action! 
+113.485         INP_STAT             pHelmIvP:212:waypt_grab state: 1,88.1588,79.297,299.131,0,64.6472,92.3321,41.0158,114.65,89.3707,267.35,193.02,0.572 action: 2,300 
+113.728         INP_STAT             pHelmIvP:213:waypt_grab successfully reset action! 
+113.728         INP_STAT             pHelmIvP:213:waypt_grab state: 1,88.2873,79.5455,299.163,0,64.4095,92.598,41.3432,114.97,90.7457,267.391,199.67,0.6 action: 2,300 
+113.979         INP_STAT             pHelmIvP:214:waypt_grab successfully reset action! 
+113.979         INP_STAT             pHelmIvP:214:waypt_grab state: 1,88.4839,79.9173,299.21,0,64.0528,92.997,41.8352,115.451,91.0186,267.733,199.67,0.597 action: 2,300 
+114.224         INP_STAT             pHelmIvP:215:waypt_grab successfully reset action! 
+114.224         INP_STAT             pHelmIvP:215:waypt_grab state: 1,88.6172,80.1641,299.24,0,63.8153,93.2628,42.1633,115.771,92.4303,267.682,204.26,0.617 action: 2,300 
+114.480         INP_STAT             pHelmIvP:216:waypt_grab successfully reset action! 
+114.480         INP_STAT             pHelmIvP:216:waypt_grab state: 1,88.8207,80.5328,299.282,0,63.4593,93.6612,42.6557,116.252,92.7065,268.016,204.26,0.614 action: 2,300 
+114.728         INP_STAT             pHelmIvP:217:waypt_grab successfully reset action! 
+114.728         INP_STAT             pHelmIvP:217:waypt_grab state: 1,88.9585,80.7776,299.309,0,63.2223,93.9265,42.984,116.573,94.061,267.912,209.1,0.635 action: 2,300 
+114.984         INP_STAT             pHelmIvP:218:waypt_grab successfully reset action! 
+114.984         INP_STAT             pHelmIvP:218:waypt_grab state: 1,89.169,81.1439,299.348,0,62.8664,94.3249,43.4776,117.055,94.3405,268.24,209.1,0.633 action: 2,300 
+115.232         INP_STAT             pHelmIvP:219:waypt_grab successfully reset action! 
+115.232         INP_STAT             pHelmIvP:219:waypt_grab state: 1,89.3113,81.3866,299.373,0,62.6298,94.5898,43.806,117.376,95.628,268.073,214.26,0.656 action: 2,300 
+115.493         INP_STAT             pHelmIvP:220:waypt_grab successfully reset action! 
+115.493         INP_STAT             pHelmIvP:220:waypt_grab state: 1,89.4554,81.6285,299.396,0,62.3932,94.8547,44.1347,117.698,95.815,268.287,214.26,0.654 action: 2,300 
+115.733         INP_STAT             pHelmIvP:221:waypt_grab successfully reset action! 
+115.733         INP_STAT             pHelmIvP:221:waypt_grab state: 1,89.6747,81.9898,299.43,0,62.0387,95.2517,44.6278,118.18,97.1291,268.173,219.63,0.677 action: 2,300 
+115.991         INP_STAT             pHelmIvP:222:waypt_grab successfully reset action! 
+115.991         INP_STAT             pHelmIvP:222:waypt_grab state: 1,89.8233,82.23,299.452,0,61.8022,95.5166,44.9571,118.501,97.3173,268.384,219.63,0.676 action: 2,300 
+116.242         INP_STAT             pHelmIvP:223:waypt_grab successfully reset action! 
+116.242         INP_STAT             pHelmIvP:223:waypt_grab state: 1,90.0491,82.5883,299.482,0,61.448,95.9132,45.4507,118.984,98.5541,268.223,225.41,0.701 action: 2,300 
+116.493         INP_STAT             pHelmIvP:224:waypt_grab successfully reset action! 
+116.493         INP_STAT             pHelmIvP:224:waypt_grab state: 1,90.2017,82.8261,299.502,0,61.2121,96.1775,45.7798,119.305,98.7426,268.43,225.41,0.7 action: 2,300 
+116.741         INP_STAT             pHelmIvP:225:waypt_grab successfully reset action! 
+116.741         INP_STAT             pHelmIvP:225:waypt_grab state: 1,90.4337,83.181,299.53,0,60.8585,96.5736,46.2734,119.788,99.8724,268.217,231.77,0.728 action: 2,300 
+116.995         INP_STAT             pHelmIvP:226:waypt_grab successfully reset action! 
+116.995         INP_STAT             pHelmIvP:226:waypt_grab state: 1,90.5909,83.4173,299.547,0,60.6223,96.8382,46.6035,120.11,100.062,268.422,231.77,0.726 action: 2,300 
+117.249         INP_STAT             pHelmIvP:227:waypt_grab successfully reset action! 
+117.249         INP_STAT             pHelmIvP:227:waypt_grab state: 1,90.8288,83.7687,299.573,0,60.2695,97.2335,47.0969,120.593,101.064,268.169,239.09,0.759 action: 2,300 
+117.490         INP_STAT             pHelmIvP:228:waypt_grab successfully reset action! 
+117.490         INP_STAT             pHelmIvP:228:waypt_grab state: 1,90.9897,84.0024,299.589,0,60.034,97.4974,47.4265,120.915,101.253,268.372,239.09,0.758 action: 2,300 
+117.743         INP_STAT             pHelmIvP:229:waypt_grab successfully reset action! 
+117.743         INP_STAT             pHelmIvP:229:waypt_grab state: 1,91.2344,84.3516,299.612,0,59.6804,97.8936,47.9216,121.399,102.129,268.07,245.92,0.789 action: 2,300 
+117.999         INP_STAT             pHelmIvP:230:waypt_grab successfully reset action! 
+117.999         INP_STAT             pHelmIvP:230:waypt_grab state: 1,91.3995,84.5834,299.626,0,59.4449,98.1575,48.2517,121.721,102.318,268.271,245.92,0.787 action: 2,300 
+118.252         INP_STAT             pHelmIvP:231:waypt_grab successfully reset action! 
+118.252         INP_STAT             pHelmIvP:231:waypt_grab state: 1,91.6503,84.9295,299.647,0,59.0916,98.5535,48.7472,122.206,103.121,267.905,250.48,0.809 action: 2,300 
+118.500         INP_STAT             pHelmIvP:232:waypt_grab successfully reset action! 
+118.501         INP_STAT             pHelmIvP:232:waypt_grab state: 1,91.8189,85.1584,299.661,0,58.8569,98.8166,49.0766,122.528,103.308,268.103,250.48,0.808 action: 2,300 
+118.745         INP_STAT             pHelmIvP:233:waypt_grab successfully reset action! 
+118.745         INP_STAT             pHelmIvP:233:waypt_grab state: 1,92.0749,85.5006,299.68,0,58.5046,99.2115,49.5713,123.011,104.023,267.723,255.34,0.831 action: 2,300 
+119.005         INP_STAT             pHelmIvP:234:waypt_grab successfully reset action! 
+119.005         INP_STAT             pHelmIvP:234:waypt_grab state: 1,92.2482,85.7285,299.692,0,58.2689,99.4757,49.9024,123.335,104.211,267.921,255.34,0.829 action: 2,300 
+119.253         INP_STAT             pHelmIvP:235:waypt_grab successfully reset action! 
+119.253         INP_STAT             pHelmIvP:235:waypt_grab state: 1,92.5096,86.067,299.709,0,57.9173,99.8699,50.3966,123.818,104.799,267.536,260.55,0.854 action: 2,300 
+119.505         INP_STAT             pHelmIvP:236:waypt_grab successfully reset action! 
+119.505         INP_STAT             pHelmIvP:236:waypt_grab state: 1,92.6861,86.2919,299.72,0,57.6826,100.133,50.7267,124.141,104.984,267.732,260.55,0.853 action: 2,300 
+119.748         INP_STAT             pHelmIvP:237:waypt_grab successfully reset action! 
+119.748         INP_STAT             pHelmIvP:237:waypt_grab state: 1,92.9537,86.6277,299.735,0,57.3305,100.528,51.2221,124.625,105.466,267.349,265.97,0.879 action: 2,300 
+120.006         INP_STAT             pHelmIvP:238:waypt_grab successfully reset action! 
+120.006         INP_STAT             pHelmIvP:238:waypt_grab state: 1,93.1338,86.8504,299.745,0,57.096,100.791,51.5522,124.948,105.65,267.544,265.97,0.877 action: 2,300 
+120.253         INP_STAT             pHelmIvP:239:waypt_grab successfully reset action! 
+120.253         INP_STAT             pHelmIvP:239:waypt_grab state: 1,93.407,87.1832,299.76,0,56.7439,101.185,52.0481,125.432,106.014,267.161,271.75,0.866 action: 2,300 
+120.502         INP_STAT             pHelmIvP:240:waypt_grab successfully reset action! 
+120.502         INP_STAT             pHelmIvP:240:waypt_grab state: 1,93.5906,87.4034,299.769,0,56.5098,101.448,52.3779,125.755,106.198,267.355,271.75,0.866 action: 2,300 
+120.760         INP_STAT             pHelmIvP:241:waypt_grab successfully reset action! 
+120.760         INP_STAT             pHelmIvP:241:waypt_grab state: 1,93.8691,87.7326,299.782,0,56.1581,101.842,52.8737,126.239,106.434,266.977,278.21,0.839 action: 2,300 
+121.012         INP_STAT             pHelmIvP:242:waypt_grab successfully reset action! 
+121.012         INP_STAT             pHelmIvP:242:waypt_grab state: 1,94.0573,87.9519,299.79,0,55.9229,102.106,53.2054,126.564,106.617,267.171,278.21,0.839 action: 2,300 
+121.255         INP_STAT             pHelmIvP:243:waypt_grab successfully reset action! 
+121.255         INP_STAT             pHelmIvP:243:waypt_grab state: 1,94.3406,88.2772,299.802,0,55.572,102.5,53.7003,127.047,106.703,266.816,285.75,0.808 action: 2,300 
+121.513         INP_STAT             pHelmIvP:244:waypt_grab successfully reset action! 
+121.513         INP_STAT             pHelmIvP:244:waypt_grab state: 1,94.5315,88.4933,299.809,0,55.3378,102.762,54.0308,127.371,106.884,267.01,285.75,0.808 action: 2,300 
+121.759         INP_STAT             pHelmIvP:245:waypt_grab successfully reset action! 
+121.759         INP_STAT             pHelmIvP:245:waypt_grab state: 1,94.8203,88.8155,299.82,0,54.9868,103.156,54.5263,127.855,106.8,266.677,292.91,0.778 action: 2,300 
+122.012         INP_STAT             pHelmIvP:246:waypt_grab successfully reset action! 
+122.012         INP_STAT             pHelmIvP:246:waypt_grab state: 1,95.0147,89.0294,299.827,0,54.7526,103.419,54.8569,128.178,106.981,266.871,292.91,0.778 action: 2,300 
+122.265         INP_STAT             pHelmIvP:247:waypt_grab successfully reset action! 
+122.265         INP_STAT             pHelmIvP:247:waypt_grab state: 1,95.3089,89.3487,299.836,0,54.4014,103.813,55.3531,128.663,106.761,266.508,297.13,0.761 action: 2,300 
+122.515         INP_STAT             pHelmIvP:248:waypt_grab successfully reset action! 
+122.515         INP_STAT             pHelmIvP:248:waypt_grab state: 1,95.5072,89.5611,299.842,0,54.1666,104.076,55.6848,128.987,106.941,266.702,297.13,0.761 action: 2,300 
+122.758         INP_STAT             pHelmIvP:249:waypt_grab successfully reset action! 
+122.758         INP_STAT             pHelmIvP:249:waypt_grab state: 1,95.8061,89.8766,299.851,0,53.816,104.469,56.1803,129.472,106.651,266.362,301.74,0.742 action: 2,300 
+123.022         INP_STAT             pHelmIvP:250:waypt_grab successfully reset action! 
+123.022         INP_STAT             pHelmIvP:250:waypt_grab state: 1,96.0071,90.086,299.857,0,53.5821,104.732,56.511,129.795,106.83,266.557,301.74,0.742 action: 2,300 
+123.270         INP_STAT             pHelmIvP:251:waypt_grab successfully reset action! 
+123.270         INP_STAT             pHelmIvP:251:waypt_grab state: 1,96.3107,90.398,299.865,0,53.2317,105.125,57.0064,130.279,106.445,266.261,306.83,0.72 action: 2,300 
+123.521         INP_STAT             pHelmIvP:252:waypt_grab successfully reset action! 
+123.521         INP_STAT             pHelmIvP:252:waypt_grab state: 1,96.5147,90.6049,299.87,0,52.9982,105.387,57.3367,130.602,106.623,266.456,306.83,0.72 action: 2,300 
+123.765         INP_STAT             pHelmIvP:253:waypt_grab successfully reset action! 
+123.765         INP_STAT             pHelmIvP:253:waypt_grab state: 1,96.8232,90.9137,299.877,0,52.6479,105.78,57.8321,131.087,106.145,266.194,312.02,0.699 action: 2,300 
+124.026         INP_STAT             pHelmIvP:254:waypt_grab successfully reset action! 
+124.026         INP_STAT             pHelmIvP:254:waypt_grab state: 1,97.0303,91.1183,299.882,0,52.4145,106.041,58.1624,131.41,106.323,266.389,312.02,0.699 action: 2,300 
+124.278         INP_STAT             pHelmIvP:255:waypt_grab successfully reset action! 
+124.278         INP_STAT             pHelmIvP:255:waypt_grab state: 1,97.3438,91.424,299.888,0,52.0641,106.435,58.6584,131.895,105.77,266.172,317.76,0.675 action: 2,300 
+124.528         INP_STAT             pHelmIvP:256:waypt_grab successfully reset action! 
+124.528         INP_STAT             pHelmIvP:256:waypt_grab state: 1,97.5541,91.6265,299.893,0,51.8307,106.696,58.9888,132.218,105.948,266.368,317.76,0.675 action: 2,300 
+124.776         INP_STAT             pHelmIvP:257:waypt_grab successfully reset action! 
+124.776         INP_STAT             pHelmIvP:257:waypt_grab state: 1,97.8724,91.929,299.899,0,51.4801,107.09,59.4851,132.703,105.307,266.213,324.31,0.648 action: 2,300 
+125.031         INP_STAT             pHelmIvP:258:waypt_grab successfully reset action! 
+125.031         INP_STAT             pHelmIvP:258:waypt_grab state: 1,98.0864,92.1297,299.902,0,51.2462,107.352,59.8163,133.027,105.486,266.41,324.31,0.648 action: 2,300 
+125.270         INP_STAT             pHelmIvP:259:waypt_grab successfully reset action! 
+125.270         INP_STAT             pHelmIvP:259:waypt_grab state: 1,98.4094,92.429,299.908,0,50.8956,107.745,60.3128,133.512,104.767,266.323,330.44,0.622 action: 2,300 
+125.530         INP_STAT             pHelmIvP:260:waypt_grab successfully reset action! 
+125.530         INP_STAT             pHelmIvP:260:waypt_grab state: 1,98.6261,92.6274,299.911,0,50.662,108.008,60.6438,133.836,104.946,266.521,330.44,0.622 action: 2,300 
+125.772         INP_STAT             pHelmIvP:261:waypt_grab successfully reset action! 
+125.772         INP_STAT             pHelmIvP:261:waypt_grab state: 1,98.9531,92.9229,299.916,0,50.3121,108.4,61.1395,134.32,104.334,266.541,335.93,0.599 action: 2,300 
+126.031         INP_STAT             pHelmIvP:262:waypt_grab successfully reset action! 
+126.032         INP_STAT             pHelmIvP:262:waypt_grab state: 1,99.1725,93.1188,299.919,0,50.0788,108.662,61.47,134.643,104.515,266.739,335.93,0.599 action: 2,300 
+126.275         INP_STAT             pHelmIvP:263:waypt_grab successfully reset action! 
+126.275         INP_STAT             pHelmIvP:263:waypt_grab state: 1,99.504,93.4111,299.924,0,49.7289,109.055,61.966,135.128,103.606,266.736,340.51,0.58 action: 2,300 
+126.532         INP_STAT             pHelmIvP:264:waypt_grab successfully reset action! 
+126.532         INP_STAT             pHelmIvP:264:waypt_grab state: 1,99.7263,93.6048,299.927,0,49.4957,109.316,62.2965,135.451,103.788,266.935,340.51,0.58 action: 2,300 
+126.779         INP_STAT             pHelmIvP:265:waypt_grab successfully reset action! 
+126.779         INP_STAT             pHelmIvP:265:waypt_grab state: 1,100.062,93.8936,299.931,0,49.1461,109.709,62.7921,135.936,102.863,266.993,345.62,0.559 action: 2,300 
+127.029         INP_STAT             pHelmIvP:266:waypt_grab successfully reset action! 
+127.029         INP_STAT             pHelmIvP:266:waypt_grab state: 1,100.287,94.0854,299.933,0,48.9126,109.971,63.1232,136.26,103.046,267.194,345.62,0.559 action: 2,300 
+127.281         INP_STAT             pHelmIvP:267:waypt_grab successfully reset action! 
+127.281         INP_STAT             pHelmIvP:267:waypt_grab state: 1,100.627,94.3712,299.937,0,48.5627,110.363,63.6192,136.745,102.097,267.316,350.86,0.537 action: 2,300 
+127.537         INP_STAT             pHelmIvP:268:waypt_grab successfully reset action! 
+127.537         INP_STAT             pHelmIvP:268:waypt_grab state: 1,100.855,94.5605,299.94,0,48.3297,110.625,63.9496,137.068,102.282,267.517,350.86,0.537 action: 2,300 
+127.786         INP_STAT             pHelmIvP:269:waypt_grab successfully reset action! 
+127.786         INP_STAT             pHelmIvP:269:waypt_grab state: 1,101.199,94.8429,299.943,0,47.9801,111.017,64.4454,137.552,101.319,267.711,356.34,0.515 action: 2,300 
+128.041         INP_STAT             pHelmIvP:270:waypt_grab successfully reset action! 
+128.041         INP_STAT             pHelmIvP:270:waypt_grab state: 1,101.431,95.0305,299.945,0,47.7465,111.279,64.7768,137.876,101.507,267.913,356.34,0.515 action: 2,300 
+128.279         INP_STAT             pHelmIvP:271:waypt_grab successfully reset action! 
+128.279         INP_STAT             pHelmIvP:271:waypt_grab state: 1,101.779,95.31,299.948,0,47.3966,111.672,65.2731,138.362,100.553,268.181,2.33,0.49 action: 2,300 
+128.537         INP_STAT             pHelmIvP:272:waypt_grab successfully reset action! 
+128.537         INP_STAT             pHelmIvP:272:waypt_grab state: 1,102.013,95.4953,299.95,0,47.1633,111.934,65.6041,138.685,100.744,268.384,2.33,0.49 action: 2,300 
+128.791         INP_STAT             pHelmIvP:273:waypt_grab successfully reset action! 
+128.791         INP_STAT             pHelmIvP:273:waypt_grab state: 1,102.365,95.7715,299.952,0,46.8135,112.326,66.1004,139.17,99.8008,268.739,9,0.462 action: 2,300 
+129.044         INP_STAT             pHelmIvP:274:waypt_grab successfully reset action! 
+129.044         INP_STAT             pHelmIvP:274:waypt_grab state: 1,102.602,95.9549,299.955,0,46.5797,112.588,66.432,139.495,99.9957,268.943,9,0.462 action: 2,300 
+129.294         INP_STAT             pHelmIvP:275:waypt_grab successfully reset action! 
+129.294         INP_STAT             pHelmIvP:275:waypt_grab state: 1,102.959,96.2278,299.957,0,46.2302,112.981,66.9279,139.98,99.1065,269.392,16.77,0.429 action: 2,300 
+129.546         INP_STAT             pHelmIvP:276:waypt_grab successfully reset action! 
+129.546         INP_STAT             pHelmIvP:276:waypt_grab state: 1,103.198,96.409,299.959,0,45.9967,113.243,67.2593,140.303,99.3053,269.596,16.77,0.429 action: 2,300 
+129.795         INP_STAT             pHelmIvP:277:waypt_grab successfully reset action! 
+129.795         INP_STAT             pHelmIvP:277:waypt_grab state: 1,103.438,96.5891,299.96,0,45.7636,113.504,67.5901,140.627,98.3145,270.046,22.25,0.407 action: 2,300 
+130.049         INP_STAT             pHelmIvP:278:waypt_grab successfully reset action! 
+130.049         INP_STAT             pHelmIvP:278:waypt_grab state: 1,103.8,96.8579,299.963,0,45.4136,113.897,68.0868,141.113,98.6191,270.351,22.25,0.407 action: 2,300 
+130.294         INP_STAT             pHelmIvP:279:waypt_grab successfully reset action! 
+130.294         INP_STAT             pHelmIvP:279:waypt_grab state: 1,104.042,97.0358,299.964,0,45.1807,114.158,68.4175,141.436,97.6502,270.877,26.72,0.388 action: 2,300 
+130.521         INP_STAT             pHelmIvP:280:waypt_grab successfully reset action! 
+130.521         INP_STAT             pHelmIvP:280:waypt_grab state: 1,104.408,97.3015,299.966,0,44.8307,114.551,68.9143,141.922,97.9624,271.181,26.72,0.388 action: 2,240 
+130.794         INP_STAT             pHelmIvP:281:waypt_grab successfully reset action! 
+130.794         INP_STAT             pHelmIvP:281:waypt_grab state: 1,104.641,97.4774,297.103,0,44.5938,114.816,69.2333,142.233,97.0572,271.77,31.82,0.355 action: 2,300 
+131.048         INP_STAT             pHelmIvP:282:waypt_grab successfully reset action! 
+131.048         INP_STAT             pHelmIvP:282:waypt_grab state: 1,104.968,97.7462,295.929,0,44.2206,115.228,69.6927,142.681,97.3339,272.077,31.82,0.35 action: 2,300 
+131.299         INP_STAT             pHelmIvP:283:waypt_grab successfully reset action! 
+131.299         INP_STAT             pHelmIvP:283:waypt_grab state: 1,105.19,97.9265,296.125,0,43.9688,115.507,70.0027,142.983,96.5042,272.73,37.05,0.329 action: 2,300 
+131.554         INP_STAT             pHelmIvP:284:waypt_grab successfully reset action! 
+131.554         INP_STAT             pHelmIvP:284:waypt_grab state: 1,105.527,98.1949,296.665,0,43.5933,115.922,70.4696,143.438,96.7958,273.039,37.05,0.331 action: 2,300 
+131.795         INP_STAT             pHelmIvP:285:waypt_grab successfully reset action! 
+131.795         INP_STAT             pHelmIvP:285:waypt_grab state: 1,105.752,98.3675,297.328,0,43.3521,116.19,70.7771,143.738,96.0727,273.753,42.63,0.311 action: 2,300 
+132.055         INP_STAT             pHelmIvP:286:waypt_grab successfully reset action! 
+132.055         INP_STAT             pHelmIvP:286:waypt_grab state: 1,106.105,98.6313,297.465,0,42.9828,116.601,71.2546,144.203,96.3856,274.06,42.63,0.311 action: 2,300 
+132.299         INP_STAT             pHelmIvP:287:waypt_grab successfully reset action! 
+132.299         INP_STAT             pHelmIvP:287:waypt_grab state: 1,106.345,98.8076,297.553,0,42.735,116.876,71.5763,144.517,95.8116,274.834,48.75,0.286 action: 2,300 
+132.556         INP_STAT             pHelmIvP:288:waypt_grab successfully reset action! 
+132.556         INP_STAT             pHelmIvP:288:waypt_grab state: 1,106.707,99.0705,297.682,0,42.3636,117.289,72.0602,144.989,96.1394,275.14,48.75,0.287 action: 2,300 
+132.804         INP_STAT             pHelmIvP:289:waypt_grab successfully reset action! 
+132.804         INP_STAT             pHelmIvP:289:waypt_grab state: 1,106.951,99.2445,297.769,0,42.1167,117.564,72.3833,145.305,95.6984,275.957,55.6,0.259 action: 2,300 
+133.052         INP_STAT             pHelmIvP:290:waypt_grab successfully reset action! 
+133.052         INP_STAT             pHelmIvP:290:waypt_grab state: 1,107.319,99.504,297.895,0,41.7468,117.976,72.8691,145.779,96.0385,276.259,55.6,0.259 action: 2,300 
+133.306         INP_STAT             pHelmIvP:291:waypt_grab successfully reset action! 
+133.306         INP_STAT             pHelmIvP:291:waypt_grab state: 1,107.566,99.6754,297.976,0,41.5012,118.249,73.1927,146.095,95.784,277.118,63.63,0.226 action: 2,300 
+133.562         INP_STAT             pHelmIvP:292:waypt_grab successfully reset action! 
+133.562         INP_STAT             pHelmIvP:292:waypt_grab state: 1,107.939,99.9306,298.09,0,41.1339,118.658,73.6787,146.569,96.1352,277.414,63.63,0.226 action: 2,300 
+133.799         INP_STAT             pHelmIvP:293:waypt_grab successfully reset action! 
+133.799         INP_STAT             pHelmIvP:293:waypt_grab state: 1,108.189,100.1,298.162,0,40.8893,118.931,74.0032,146.886,96.0286,278.342,68.97,0.204 action: 2,300 
+134.060         INP_STAT             pHelmIvP:294:waypt_grab successfully reset action! 
+134.060         INP_STAT             pHelmIvP:294:waypt_grab state: 1,108.567,100.351,298.265,0,40.5238,119.338,74.49,147.361,96.3916,278.632,68.97,0.205 action: 2,300 
+134.310         INP_STAT             pHelmIvP:295:waypt_grab successfully reset action! 
+134.310         INP_STAT             pHelmIvP:295:waypt_grab state: 1,108.82,100.518,298.331,0,40.2805,119.609,74.8149,147.678,96.4192,279.59,73.35,0.187 action: 2,300 
+134.562         INP_STAT             pHelmIvP:296:waypt_grab successfully reset action! 
+134.562         INP_STAT             pHelmIvP:296:waypt_grab state: 1,109.203,100.766,298.425,0,39.9158,120.016,75.3034,148.155,96.7946,279.874,73.35,0.187 action: 2,300 
+134.811         INP_STAT             pHelmIvP:297:waypt_grab successfully reset action! 
+134.811         INP_STAT             pHelmIvP:297:waypt_grab state: 1,109.459,100.93,298.485,0,39.6733,120.287,75.6291,148.473,96.9661,280.815,78.41,0.166 action: 2,300 
+135.063         INP_STAT             pHelmIvP:298:waypt_grab successfully reset action! 
+135.063         INP_STAT             pHelmIvP:298:waypt_grab state: 1,109.846,101.175,298.57,0,39.3104,120.692,76.1179,148.951,97.3523,281.092,78.41,0.167 action: 2,300 
+135.313         INP_STAT             pHelmIvP:299:waypt_grab successfully reset action! 
+135.313         INP_STAT             pHelmIvP:299:waypt_grab state: 1,110.105,101.336,298.624,0,39.0696,120.961,76.443,149.268,97.669,282.022,83.55,0.146 action: 2,300 
+135.561         INP_STAT             pHelmIvP:300:waypt_grab successfully reset action! 
+135.561         INP_STAT             pHelmIvP:300:waypt_grab state: 1,110.496,101.577,298.701,0,38.7082,121.364,76.9321,149.746,98.0656,282.291,83.55,0.146 action: 2,300 
+135.816         INP_STAT             pHelmIvP:301:waypt_grab successfully reset action! 
+135.816         INP_STAT             pHelmIvP:301:waypt_grab state: 1,110.758,101.737,298.75,0,38.4679,121.633,77.2581,150.064,98.5233,283.195,89.03,0.123 action: 2,300 
+136.073         INP_STAT             pHelmIvP:302:waypt_grab successfully reset action! 
+136.073         INP_STAT             pHelmIvP:302:waypt_grab state: 1,111.152,101.974,298.82,0,38.1083,122.034,77.7469,150.542,98.9292,283.456,89.03,0.124 action: 2,300 
+136.308         INP_STAT             pHelmIvP:303:waypt_grab successfully reset action! 
+136.308         INP_STAT             pHelmIvP:303:waypt_grab state: 1,111.416,102.131,298.864,0,37.8689,122.302,78.073,150.86,99.5516,284.32,95.08,0.099 action: 2,300 
+136.571         INP_STAT             pHelmIvP:304:waypt_grab successfully reset action! 
+136.571         INP_STAT             pHelmIvP:304:waypt_grab state: 1,111.814,102.365,298.928,0,37.5103,122.702,78.5624,151.338,99.9671,284.573,95.08,0.099 action: 2,300 
+136.814         INP_STAT             pHelmIvP:305:waypt_grab successfully reset action! 
+136.814         INP_STAT             pHelmIvP:305:waypt_grab state: 1,112.081,102.52,298.968,0,37.2714,122.97,78.8892,151.657,100.724,285.382,101.96,0.07 action: 2,300 
+137.067         INP_STAT             pHelmIvP:306:waypt_grab successfully reset action! 
+137.067         INP_STAT             pHelmIvP:306:waypt_grab state: 1,112.485,102.751,299.026,0,36.9126,123.371,79.3807,152.137,101.15,285.627,101.96,0.071 action: 2,300 
+137.322         INP_STAT             pHelmIvP:307:waypt_grab successfully reset action! 
+137.322         INP_STAT             pHelmIvP:307:waypt_grab state: 1,112.754,102.904,299.063,0,36.6744,123.637,79.7075,152.457,102.081,286.382,108.61,0.062 action: 2,300 
+137.569         INP_STAT             pHelmIvP:308:waypt_grab successfully reset action! 
+137.569         INP_STAT             pHelmIvP:308:waypt_grab state: 1,113.16,103.132,299.115,0,36.3172,124.036,80.1985,152.936,102.513,286.619,108.61,0.06 action: 2,300 
+137.818         INP_STAT             pHelmIvP:309:waypt_grab successfully reset action! 
+137.818         INP_STAT             pHelmIvP:309:waypt_grab state: 1,113.432,103.283,299.149,0,36.0795,124.302,80.5258,153.256,103.607,287.342,113.25,0.073 action: 2,300 
+138.075         INP_STAT             pHelmIvP:310:waypt_grab successfully reset action! 
+138.075         INP_STAT             pHelmIvP:310:waypt_grab state: 1,113.842,103.508,299.197,0,35.7232,124.701,81.017,153.736,104.047,287.571,113.25,0.072 action: 2,300 
+138.318         INP_STAT             pHelmIvP:311:waypt_grab successfully reset action! 
+138.318         INP_STAT             pHelmIvP:311:waypt_grab state: 1,114.117,103.657,299.227,0,35.4852,124.967,81.3456,154.057,105.224,288.234,118.09,0.086 action: 2,300 
+138.577         INP_STAT             pHelmIvP:312:waypt_grab successfully reset action! 
+138.577         INP_STAT             pHelmIvP:312:waypt_grab state: 1,114.531,103.88,299.271,0,35.1283,125.367,81.839,154.539,105.672,288.457,118.09,0.085 action: 2,300 
+138.828         INP_STAT             pHelmIvP:313:waypt_grab successfully reset action! 
+138.828         INP_STAT             pHelmIvP:313:waypt_grab state: 1,114.808,104.027,299.298,0,34.891,125.632,82.1677,154.861,106.942,289.051,123.2,0.101 action: 2,300 
+139.081         INP_STAT             pHelmIvP:314:waypt_grab successfully reset action! 
+139.081         INP_STAT             pHelmIvP:314:waypt_grab state: 1,115.225,104.246,299.338,0,34.5356,126.03,82.6602,155.342,107.396,289.266,123.2,0.1 action: 2,300 
+139.327         INP_STAT             pHelmIvP:315:waypt_grab successfully reset action! 
+139.327         INP_STAT             pHelmIvP:315:waypt_grab state: 1,115.504,104.391,299.363,0,34.2988,126.295,82.9889,155.663,108.739,289.785,128.49,0.117 action: 2,300 
+139.580         INP_STAT             pHelmIvP:316:waypt_grab successfully reset action! 
+139.580         INP_STAT             pHelmIvP:316:waypt_grab state: 1,115.924,104.608,299.399,0,33.9435,126.693,83.4825,156.145,109.198,289.993,128.49,0.116 action: 2,300 
+139.829         INP_STAT             pHelmIvP:317:waypt_grab successfully reset action! 
+139.829         INP_STAT             pHelmIvP:317:waypt_grab state: 1,116.205,104.751,299.422,0,33.7071,126.958,83.8112,156.467,110.61,290.44,134.22,0.136 action: 2,300 
+140.085         INP_STAT             pHelmIvP:318:waypt_grab successfully reset action! 
+140.085         INP_STAT             pHelmIvP:318:waypt_grab state: 1,116.628,104.964,299.454,0,33.353,127.354,84.3043,156.949,111.074,290.642,134.22,0.134 action: 2,300 
+140.330         INP_STAT             pHelmIvP:319:waypt_grab successfully reset action! 
+140.330         INP_STAT             pHelmIvP:319:waypt_grab state: 1,116.911,105.106,299.475,0,33.1171,127.618,84.6329,157.27,112.537,291.015,140.3,0.157 action: 2,300 
+140.572         INP_STAT             pHelmIvP:320:waypt_grab successfully reset action! 
+140.572         INP_STAT             pHelmIvP:320:waypt_grab state: 1,117.337,105.316,299.495,0,32.7633,128.015,85.1265,157.752,113.005,291.21,140.3,0.155 action: 2,300 
+140.806         INP_STAT             pHelmIvP:321:waypt_grab successfully reset action! 
+140.806         INP_STAT             pHelmIvP:321:waypt_grab state: 1,117.622,105.456,299.523,0,32.5278,128.279,85.4552,158.073,114.502,291.495,147.28,0.182 action: 2,0 
+141.089         INP_STAT             pHelmIvP:322:waypt_grab successfully reset action! 
+141.089         INP_STAT             pHelmIvP:322:waypt_grab state: 1,118.054,105.658,302.458,0,32.1861,128.663,85.9499,158.557,114.975,291.679,147.28,0.193 action: 2,300 
+141.329         INP_STAT             pHelmIvP:323:waypt_grab successfully reset action! 
+141.329         INP_STAT             pHelmIvP:323:waypt_grab state: 1,118.351,105.782,303.826,0,31.9798,128.898,86.2848,158.886,116.492,291.868,154.59,0.227 action: 2,300 
+141.587         INP_STAT             pHelmIvP:324:waypt_grab successfully reset action! 
+141.587         INP_STAT             pHelmIvP:324:waypt_grab state: 1,118.655,105.907,303.634,0,31.7715,129.136,86.6259,159.22,116.821,291.978,154.59,0.226 action: 2,300 
+141.832         INP_STAT             pHelmIvP:325:waypt_grab successfully reset action! 
+141.832         INP_STAT             pHelmIvP:325:waypt_grab state: 1,119.113,106.096,303.362,0,31.4548,129.497,87.1396,159.724,118.608,292.152,159.39,0.243 action: 2,300 
+142.090         INP_STAT             pHelmIvP:326:waypt_grab successfully reset action! 
+142.090         INP_STAT             pHelmIvP:326:waypt_grab state: 1,119.41,106.219,302.666,0,31.2453,129.735,87.4733,160.051,118.931,292.26,159.39,0.239 action: 2,300 
+142.338         INP_STAT             pHelmIvP:327:waypt_grab successfully reset action! 
+142.338         INP_STAT             pHelmIvP:327:waypt_grab state: 1,119.857,106.407,302.239,0,30.9225,130.101,87.9744,160.542,120.71,292.383,164.18,0.256 action: 2,300 
+142.589         INP_STAT             pHelmIvP:328:waypt_grab successfully reset action! 
+142.589         INP_STAT             pHelmIvP:328:waypt_grab state: 1,120.161,106.535,302.162,0,30.7015,130.351,88.3154,160.876,121.041,292.494,164.18,0.255 action: 2,300 
+142.835         INP_STAT             pHelmIvP:329:waypt_grab successfully reset action! 
+142.835         INP_STAT             pHelmIvP:329:waypt_grab state: 1,120.619,106.726,302.05,0,30.3685,130.728,88.8275,161.377,122.803,292.56,169.29,0.275 action: 2,300 
+143.093         INP_STAT             pHelmIvP:330:waypt_grab successfully reset action! 
+143.093         INP_STAT             pHelmIvP:330:waypt_grab state: 1,120.925,106.854,301.977,0,30.1458,130.98,89.1689,161.712,123.135,292.67,169.29,0.274 action: 2,300 
+143.344         INP_STAT             pHelmIvP:331:waypt_grab successfully reset action! 
+143.344         INP_STAT             pHelmIvP:331:waypt_grab state: 1,121.385,107.043,301.864,0,29.8108,131.359,89.6805,162.213,124.622,292.717,173.48,0.291 action: 2,300 
+143.591         INP_STAT             pHelmIvP:332:waypt_grab successfully reset action! 
+143.591         INP_STAT             pHelmIvP:332:waypt_grab state: 1,121.691,107.169,301.792,0,29.5875,131.612,90.0203,162.545,124.953,292.825,173.48,0.29 action: 2,300 
+143.846         INP_STAT             pHelmIvP:333:waypt_grab successfully reset action! 
+143.846         INP_STAT             pHelmIvP:333:waypt_grab state: 1,122.149,107.356,301.689,0,29.2523,131.991,90.5286,163.043,126.631,292.799,179.22,0.313 action: 2,300 
+144.091         INP_STAT             pHelmIvP:334:waypt_grab successfully reset action! 
+144.091         INP_STAT             pHelmIvP:334:waypt_grab state: 1,122.456,107.481,301.625,0,29.0281,132.244,90.8675,163.375,126.961,292.905,179.22,0.312 action: 2,300 
+144.345         INP_STAT             pHelmIvP:335:waypt_grab successfully reset action! 
+144.346         INP_STAT             pHelmIvP:335:waypt_grab state: 1,122.915,107.666,301.533,0,28.6914,132.625,91.3752,163.872,128.579,292.827,185.38,0.338 action: 2,300 
+144.595         INP_STAT             pHelmIvP:336:waypt_grab successfully reset action! 
+144.595         INP_STAT             pHelmIvP:336:waypt_grab state: 1,123.222,107.789,301.475,0,28.4665,132.879,91.7132,164.203,128.908,292.932,185.38,0.337 action: 2,300 
+144.848         INP_STAT             pHelmIvP:337:waypt_grab successfully reset action! 
+144.848         INP_STAT             pHelmIvP:337:waypt_grab state: 1,123.682,107.973,301.392,0,28.129,133.26,92.2193,164.698,130.451,292.801,192.35,0.367 action: 2,300 
+145.104         INP_STAT             pHelmIvP:338:waypt_grab successfully reset action! 
+145.104         INP_STAT             pHelmIvP:338:waypt_grab state: 1,123.989,108.095,301.339,0,27.9038,133.514,92.5559,165.028,130.779,292.905,192.35,0.366 action: 2,300 
+145.354         INP_STAT             pHelmIvP:339:waypt_grab successfully reset action! 
+145.354         INP_STAT             pHelmIvP:339:waypt_grab state: 1,124.451,108.277,301.262,0,27.5646,133.897,93.0619,165.523,132.199,292.729,200.67,0.401 action: 2,300 
+145.604         INP_STAT             pHelmIvP:340:waypt_grab successfully reset action! 
+145.605         INP_STAT             pHelmIvP:340:waypt_grab state: 1,124.76,108.398,301.214,0,27.3381,134.152,93.399,165.853,132.527,292.832,200.67,0.4 action: 2,300 
+145.849         INP_STAT             pHelmIvP:341:waypt_grab successfully reset action! 
+145.849         INP_STAT             pHelmIvP:341:waypt_grab state: 1,125.221,108.577,301.146,0,26.999,134.535,93.9027,166.346,133.912,292.592,205.23,0.421 action: 2,300 
+146.105         INP_STAT             pHelmIvP:342:waypt_grab successfully reset action! 
+146.105         INP_STAT             pHelmIvP:342:waypt_grab state: 1,125.529,108.696,301.103,0,26.7728,134.79,94.2379,166.674,134.238,292.694,205.23,0.42 action: 2,300 
+146.347         INP_STAT             pHelmIvP:343:waypt_grab successfully reset action! 
+146.347         INP_STAT             pHelmIvP:343:waypt_grab state: 1,125.993,108.875,301.04,0,26.4325,135.174,94.7412,167.166,135.572,292.416,209.66,0.441 action: 2,300 
+146.600         INP_STAT             pHelmIvP:344:waypt_grab successfully reset action! 
+146.600         INP_STAT             pHelmIvP:344:waypt_grab state: 1,126.302,108.993,301.001,0,26.2055,135.429,95.0763,167.494,135.897,292.518,209.66,0.44 action: 2,300 
+146.858         INP_STAT             pHelmIvP:345:waypt_grab successfully reset action! 
+146.858         INP_STAT             pHelmIvP:345:waypt_grab state: 1,126.767,109.169,300.944,0,25.8641,135.814,95.5793,167.987,137.132,292.232,214.77,0.463 action: 2,300 
+147.109         INP_STAT             pHelmIvP:346:waypt_grab successfully reset action! 
+147.109         INP_STAT             pHelmIvP:346:waypt_grab state: 1,127.076,109.285,300.908,0,25.6369,136.07,95.9136,168.314,137.455,292.332,214.77,0.462 action: 2,300 
+147.356         INP_STAT             pHelmIvP:347:waypt_grab successfully reset action! 
+147.356         INP_STAT             pHelmIvP:347:waypt_grab state: 1,127.543,109.46,300.857,0,25.2945,136.456,96.4164,168.806,138.576,292.031,219.99,0.486 action: 2,300 
+147.613         INP_STAT             pHelmIvP:348:waypt_grab successfully reset action! 
+147.613         INP_STAT             pHelmIvP:348:waypt_grab state: 1,127.854,109.576,300.824,0,25.0663,136.713,96.7509,169.133,138.898,292.132,219.99,0.485 action: 2,300 
+147.859         INP_STAT             pHelmIvP:349:waypt_grab successfully reset action! 
+147.859         INP_STAT             pHelmIvP:349:waypt_grab state: 1,128.321,109.748,300.778,0,24.7239,137.098,97.2523,169.624,139.921,291.811,225.57,0.511 action: 2,300 
+148.115         INP_STAT             pHelmIvP:350:waypt_grab successfully reset action! 
+148.115         INP_STAT             pHelmIvP:350:waypt_grab state: 1,128.633,109.863,300.749,0,24.4957,137.355,97.586,169.95,140.241,291.912,225.57,0.51 action: 2,300 
+148.363         INP_STAT             pHelmIvP:351:waypt_grab successfully reset action! 
+148.363         INP_STAT             pHelmIvP:351:waypt_grab state: 1,129.102,110.033,300.707,0,24.1522,137.742,98.0876,170.441,141.14,291.587,231.52,0.537 action: 2,300 
+148.612         INP_STAT             pHelmIvP:352:waypt_grab successfully reset action! 
+148.612         INP_STAT             pHelmIvP:352:waypt_grab state: 1,129.415,110.147,300.681,0,23.9229,138,98.422,170.768,141.46,291.687,231.52,0.536 action: 2,300 
+148.862         INP_STAT             pHelmIvP:353:waypt_grab successfully reset action! 
+148.862         INP_STAT             pHelmIvP:353:waypt_grab state: 1,129.886,110.316,300.642,0,23.5789,138.387,98.923,171.258,142.223,291.357,238.53,0.568 action: 2,300 
+149.116         INP_STAT             pHelmIvP:354:waypt_grab successfully reset action! 
+149.116         INP_STAT             pHelmIvP:354:waypt_grab state: 1,130.2,110.428,300.618,0,23.3493,138.646,99.257,171.585,142.542,291.458,238.53,0.567 action: 2,300 
+149.360         INP_STAT             pHelmIvP:355:waypt_grab successfully reset action! 
+149.360         INP_STAT             pHelmIvP:355:waypt_grab state: 1,130.673,110.595,300.584,0,23.0044,139.034,99.7583,172.075,143.156,291.13,246.76,0.604 action: 2,300 
+149.617         INP_STAT             pHelmIvP:356:waypt_grab successfully reset action! 
+149.617         INP_STAT             pHelmIvP:356:waypt_grab state: 1,130.987,110.706,300.562,0,22.7748,139.292,100.092,172.401,143.473,291.23,246.76,0.603 action: 2,300 
+149.863         INP_STAT             pHelmIvP:357:waypt_grab successfully reset action! 
+149.863         INP_STAT             pHelmIvP:357:waypt_grab state: 1,131.462,110.872,300.53,0,22.4288,139.681,100.593,172.892,143.945,290.865,251.15,0.624 action: 2,300 
+150.118         INP_STAT             pHelmIvP:358:waypt_grab successfully reset action! 
+150.118         INP_STAT             pHelmIvP:358:waypt_grab state: 1,131.778,110.982,300.51,0,22.1988,139.94,100.927,173.218,144.261,290.965,251.15,0.623 action: 2,300 
+150.362         INP_STAT             pHelmIvP:359:waypt_grab successfully reset action! 
+150.362         INP_STAT             pHelmIvP:359:waypt_grab state: 1,132.254,111.145,300.482,0,21.8529,140.329,101.427,173.708,144.642,290.595,255.52,0.645 action: 2,300 
+150.620         INP_STAT             pHelmIvP:360:waypt_grab successfully reset action! 
+150.620         INP_STAT             pHelmIvP:360:waypt_grab state: 1,132.57,111.254,300.463,0,21.6229,140.588,101.76,174.033,144.957,290.695,255.52,0.644 action: 2,300 
+150.865         INP_STAT             pHelmIvP:361:waypt_grab successfully reset action! 
+150.865         INP_STAT             pHelmIvP:361:waypt_grab state: 1,133.046,111.415,300.437,0,21.2778,140.976,102.259,174.521,145.232,290.347,260.5,0.667 action: 2,300 
+151.115         INP_STAT             pHelmIvP:362:waypt_grab successfully reset action! 
+151.115         INP_STAT             pHelmIvP:362:waypt_grab state: 1,133.363,111.522,300.421,0,21.0477,141.234,102.591,174.846,145.545,290.447,260.5,0.666 action: 2,300 
+151.372         INP_STAT             pHelmIvP:363:waypt_grab successfully reset action! 
+151.372         INP_STAT             pHelmIvP:363:waypt_grab state: 1,133.841,111.682,300.397,0,20.7011,141.624,103.091,175.335,145.728,290.112,265.66,0.69 action: 2,300 
+151.619         INP_STAT             pHelmIvP:364:waypt_grab successfully reset action! 
+151.619         INP_STAT             pHelmIvP:364:waypt_grab state: 1,134.16,111.788,300.382,0,20.4704,141.883,103.424,175.66,146.039,290.213,265.66,0.69 action: 2,300 
+151.870         INP_STAT             pHelmIvP:365:waypt_grab successfully reset action! 
+151.870         INP_STAT             pHelmIvP:365:waypt_grab state: 1,134.639,111.946,300.361,0,20.1243,142.272,103.923,176.148,146.106,289.899,271.17,0.715 action: 2,300 
+152.120         INP_STAT             pHelmIvP:366:waypt_grab successfully reset action! 
+152.120         INP_STAT             pHelmIvP:366:waypt_grab state: 1,134.958,112.051,300.348,0,19.8936,142.532,104.255,176.473,146.416,290,271.17,0.714 action: 2,300 
+152.374         INP_STAT             pHelmIvP:367:waypt_grab successfully reset action! 
+152.374         INP_STAT             pHelmIvP:367:waypt_grab state: 1,135.438,112.208,300.328,0,19.5474,142.921,104.753,176.96,146.375,289.708,277.39,0.742 action: 2,300 
+152.620         INP_STAT             pHelmIvP:368:waypt_grab successfully reset action! 
+152.620         INP_STAT             pHelmIvP:368:waypt_grab state: 1,135.759,112.311,300.316,0,19.3163,143.181,105.085,177.286,146.685,289.809,277.39,0.742 action: 2,300 
+152.873         INP_STAT             pHelmIvP:369:waypt_grab successfully reset action! 
+152.873         INP_STAT             pHelmIvP:369:waypt_grab state: 1,136.24,112.466,300.298,0,18.9701,143.57,105.583,177.772,146.531,289.553,284.57,0.774 action: 2,300 
+153.123         INP_STAT             pHelmIvP:370:waypt_grab successfully reset action! 
+153.123         INP_STAT             pHelmIvP:370:waypt_grab state: 1,136.562,112.568,300.287,0,18.7385,143.83,105.916,178.098,146.84,289.655,284.57,0.773 action: 2,300 
+153.376         INP_STAT             pHelmIvP:371:waypt_grab successfully reset action! 
+153.376         INP_STAT             pHelmIvP:371:waypt_grab state: 1,137.046,112.721,300.271,0,18.3911,144.22,106.415,178.586,146.548,289.419,290.55,0.79 action: 2,300 
+153.631         INP_STAT             pHelmIvP:372:waypt_grab successfully reset action! 
+153.631         INP_STAT             pHelmIvP:372:waypt_grab state: 1,137.369,112.823,300.261,0,18.1598,144.48,106.747,178.91,146.856,289.521,290.55,0.79 action: 2,300 
+153.887         INP_STAT             pHelmIvP:373:waypt_grab successfully reset action! 
+153.887         INP_STAT             pHelmIvP:373:waypt_grab state: 1,137.854,112.974,300.246,0,17.8123,144.871,107.245,179.398,146.451,289.301,295.14,0.771 action: 2,300 
+154.127         INP_STAT             pHelmIvP:374:waypt_grab successfully reset action! 
+154.127         INP_STAT             pHelmIvP:374:waypt_grab state: 1,138.178,113.074,300.237,0,17.5807,145.131,107.577,179.723,146.758,289.403,295.14,0.771 action: 2,300 
+154.380         INP_STAT             pHelmIvP:375:waypt_grab successfully reset action! 
+154.380         INP_STAT             pHelmIvP:375:waypt_grab state: 1,138.501,113.174,300.228,0,17.3494,145.391,107.909,180.047,146.122,289.162,300.15,0.75 action: 2,300 
+154.630         INP_STAT             pHelmIvP:376:waypt_grab successfully reset action! 
+154.631         INP_STAT             pHelmIvP:376:waypt_grab state: 1,138.988,113.323,300.215,0,17.0019,145.781,108.407,180.534,146.583,289.316,300.15,0.75 action: 2,300 
+154.886         INP_STAT             pHelmIvP:377:waypt_grab successfully reset action! 
+154.886         INP_STAT             pHelmIvP:377:waypt_grab state: 1,139.313,113.422,300.207,0,16.7704,146.041,108.738,180.858,145.895,289.111,305.38,0.728 action: 2,300 
+155.130         INP_STAT             pHelmIvP:378:waypt_grab successfully reset action! 
+155.130         INP_STAT             pHelmIvP:378:waypt_grab state: 1,139.801,113.569,300.196,0,16.423,146.431,109.236,181.344,146.354,289.266,305.38,0.728 action: 2,300 
+155.390         INP_STAT             pHelmIvP:379:waypt_grab successfully reset action! 
+155.390         INP_STAT             pHelmIvP:379:waypt_grab state: 1,140.126,113.666,300.188,0,16.1913,146.692,109.567,181.669,145.599,289.102,310.81,0.705 action: 2,300 
