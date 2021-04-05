@@ -581,6 +581,7 @@ string BHV_Input::make_state()
 	   else if(var == "deviation"){
 	  //unordered_map<string, NodeReport>::iterator veh = m_player_map.find(vehicle);
 	    double eny_dist = process_dist(m_osX, m_osY, bucket, veh->second.nav_x, veh->second.nav_y);
+	    double normalized_dev = 0.000;
 	    if eny_dist > 20.0{
               normalized_dev = 1.000;
 	    }
@@ -592,7 +593,7 @@ string BHV_Input::make_state()
 	      double my_dev = diff_angles(angle_to_eny, my_heading);
 	      double eny_dev = diff_angles(eny_angle_to_me, eny_heading);
               double total_dev = my_dev+eny_dev;
-	      double normalized_dev = total_dev/240.0; //normalize between 0 and 1
+	      normalized_dev = total_dev/240.0; //normalize between 0 and 1
 	      if(normalized_dev > 1.000){
                 normalized_dev = 1.000;
 	      }
