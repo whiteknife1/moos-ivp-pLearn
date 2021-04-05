@@ -582,7 +582,7 @@ string BHV_Input::make_state()
 	  //unordered_map<string, NodeReport>::iterator veh = m_player_map.find(vehicle);
 	    double eny_dist = process_dist(m_osX, m_osY, bucket, veh->second.nav_x, veh->second.nav_y);
 	    double normalized_dev = 0.000;
-	    if eny_dist > 20.0{
+	    if(eny_dist > 20.0){
               normalized_dev = 1.000;
 	    }
 	    else{
