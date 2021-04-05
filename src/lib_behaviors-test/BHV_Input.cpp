@@ -581,9 +581,10 @@ string BHV_Input::make_state()
 	   else if(var == "deviation"){
 	  //unordered_map<string, NodeReport>::iterator veh = m_player_map.find(vehicle);
 	    double eny_dist = process_dist(m_osX, m_osY, bucket, veh->second.nav_x, veh->second.nav_y);
-	    if eny_dist > 20.0:
+	    if eny_dist > 20.0{
               normalized_dev = 1.000;
-	    else:
+	    }
+	    else{
               double angle_to_eny = process_angle(m_osX, m_osY, bucket, "absolute", veh->second.nav_x, veh->second.nav_y); 
 	      double eny_angle_to_me = adjust_angle_180(angle_to_eny);
 	      double eny_heading = veh->second.heading/bucket;
@@ -598,6 +599,7 @@ string BHV_Input::make_state()
 	      else{ //round to 3 places past decimal
                 normalized_dev = (int)(normalized_dev*1000.0)/1000.0;
               }
+	    }
 	    obj = normalized_dev;
         }
 	 }
