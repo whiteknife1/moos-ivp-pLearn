@@ -581,9 +581,9 @@ string BHV_Input::make_state()
 	   else if(var == "deviation"){
 	  //unordered_map<string, NodeReport>::iterator veh = m_player_map.find(vehicle);
 	    double eny_dist = process_dist(m_osX, m_osY, bucket, veh->second.nav_x, veh->second.nav_y);
-	    double normalized_dev = 0.000;
+	    double normalized_dev = 0;
 	    if(eny_dist > 20.0){
-              normalized_dev = 1.000;
+              normalized_dev = 1.00;
 	    }
 	    else{
               double angle_to_eny = process_angle(m_osX, m_osY, bucket, "absolute", veh->second.nav_x, veh->second.nav_y); 
@@ -594,11 +594,11 @@ string BHV_Input::make_state()
 	      double eny_dev = diff_angles(eny_angle_to_me, eny_heading);
               double total_dev = my_dev+eny_dev;
 	      normalized_dev = total_dev/240.0; //normalize between 0 and 1
-	      if(normalized_dev > 1.000){
-                normalized_dev = 1.000;
+	      if(normalized_dev > 1.00){
+                normalized_dev = 1.00;
 	      }
-	      else{ //round to 3 places past decimal
-                normalized_dev = (int)(normalized_dev*1000.0)/1000.0;
+	      else{ //round to 2 places past decimal
+                normalized_dev = ((int)(normalized_dev*100.0))/100.0;
               }
 	    }
 	    obj = normalized_dev;
