@@ -497,6 +497,23 @@ string BHV_Input::make_state()
       else if(var == "tagged"){
 	obj=process_tagged();
       }
+      else if(var == "deviation"){
+        double eny_dist = process_dist(m_osX, m_osY, bucket, veh->second.nav_x, veh->second.nav_y);
+	if(eny_dist < 20.0){
+          double angle_to_eny = process_angle(m_osX, m_osY, bucket, "absolute", veh->second.nav_x, veh->second.nav_y); 
+	  double eny_angle_to_me = adjust_angle_180(angle_to_eny);
+	  double eny_heading = veh->second.heading/bucket;
+          double my_heading = m_heading_abs/bucket;	
+	  double my_dev = diff_angles(angle_to_eny, my_heading);
+	  double eny_dev = diff_angles(eny_angle_to_me, eny_heading);
+          double total_dev = my_dev+eny_dev;
+	  if(total_dev < 60.0){
+	    obj = 0.0;
+	  }
+	  else {
+	    obj = 1.0
+          }
+      }
     }
 
     //process distance features
