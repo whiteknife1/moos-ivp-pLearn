@@ -499,6 +499,7 @@ string BHV_Input::make_state()
       }
       else if(var == "deviation"){
         double eny_dist = process_dist(m_osX, m_osY, bucket, veh->second.nav_x, veh->second.nav_y);
+	double will_collide = 1.0;
 	if(eny_dist < 20.0){
           double angle_to_eny = process_angle(m_osX, m_osY, bucket, "absolute", veh->second.nav_x, veh->second.nav_y); 
 	  double eny_angle_to_me = adjust_angle_180(angle_to_eny);
@@ -508,11 +509,10 @@ string BHV_Input::make_state()
 	  double eny_dev = diff_angles(eny_angle_to_me, eny_heading);
           double total_dev = my_dev+eny_dev;
 	  if(total_dev < 60.0){
-	    obj = 0.0;
+	    will_collide = 0.0;
 	  }
-	  else {
-	    obj = 1.0
-          }
+        }
+	obj = will_collide;
       }
     }
 
