@@ -498,6 +498,7 @@ string BHV_Input::make_state()
 	obj=process_tagged();
       }
       else if(var == "deviation"){
+	unordered_map<string, NodeReport>::iterator veh = m_player_map.find(vehicle);
         double eny_dist = process_dist(m_osX, m_osY, bucket, veh->second.nav_x, veh->second.nav_y);
 	double will_collide = 1.0;
 	if(eny_dist < 20.0){
