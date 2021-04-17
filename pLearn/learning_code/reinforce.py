@@ -81,42 +81,19 @@ def make_rewards(smooth = True):
     rewards for going out of bounds
     """
     def reward_fn(state):
-        return within_goal(state)+within_bound(state)+within_tagged(state)+eny_angle(state)+angle_to_flag(state)
+        return within_goal(state)+within_bound(state)+within_tagged(state)+heading_towards_flag(state)
     return reward_fn
-"""
-    else:
-        def reward_fn(state):
-            #check within bounds (first priority)
-            boundary_dist=min(state[Constants.state["leftBound"].index],
-                            state[Constants.state["rightBound"].index],
-                            state[Constants.state["upperBound"].index],
-                            state[Constants.state["lowerBound"].index])
-            if(boundary_dist < 5):
-                return Constants.neg_reward
-
-            enemy_dist=state[Constants.state["enemy_dist"].index]
-            if(enemy_dist < 5):
-                return Constants.neg_reward
-
-            dist=state[Constants.state["flag_dist"].index]
-            discount = Constants.reward_dropoff
-            return Constants.max_reward*discount**(max(0, dist))
-"""         
-            
         
 
 def within_goal(state):
-   """
-   helper function to give a reward based on proximity to the goal state (flag)
-   """
    dist=state[Constants.state["flag_dist"].index]
    if state[Constants.state["out"].index] != 1:
-        if dist < 11:
-            return 100
+        if dist < Constants.max_reward_radius:
+            return Constants.max_reward
         else:
-            return float((110.0*(.99**dist)) - 14.5)
+            return (Constants.max_reward*(1.0/dist))**Constants.reward_dropoff
    else:
-        return 0
+        return Constants.neg_reward # was previously 0
 
 def within_bound(state):
    """
@@ -127,27 +104,14 @@ def within_bound(state):
             state[Constants.state["upperBound"].index],
             state[Constants.state["lowerBound"].index])
    if state[Constants.state["out"].index] == 1:
-       return -150.0
+       return Constants.neg_reward
    elif boundary_dist < 8:
-       return float((10*boundary_dist) - 100.0)
+       return float((10*boundary_dist) - 150.0) # changed from -100 to -150 to make harder boundary
    elif boundary_dist < 15:
        return float(-40.0 + (2.5*boundary_dist))
    else:
        return 0
 
-def within_tagged(state):
-   """
-   helper function to give a reward based on proximity to the goal state (flag)
-   """
-   enemy_dist=state[Constants.state["enemy_dist"].index]
-   if state[Constants.state["out"].index] == 1:
-       return Constants.neg_reward
-   elif enemy_dist < 8:
-       return Constants.neg_reward
-   elif enemy_dist < 15:
-       return Constants.neg_reward-enemy_dist*(Constants.neg_reward/30)
-   else:
-       return 0
 
 def adjust_180_angle(ang1):
     if ang1 > 179:
@@ -162,46 +126,48 @@ def diff_angles(ang1, ang2):
     else:
         return diff
 
+def heading_towards_flag(state):
+    flag_dist = state[Constants.state["flag_dist"].index]
+    if flag_dist > 25+Constants.max_reward_radius:
+        flag_theta = state[Constants.state["flag_theta"].index]
+        heading = state[Constants.state["heading"].index]
+        diff = diff_angles(flag_theta_heading)
+        return (diff/180.0)*Constants.neg_reward
+    else:
+        return 0
+
 def eny_angle(state):
     """
-    helper function to punish based on angle to enemy
+    helper function to assess likelyhood of enemy collision
     """
     enemy_dist=state[Constants.state["enemy_dist"].index]
     me_and_eny_theta = state[Constants.state["enemy_angle"].index] #check that this is actually the angle between you and enemy 
     eny_head = state[Constants.state["enemy_heading"].index]
     my_heading = state[Constants.state["heading"].index]
-    totalReward = 0
-    MAX_DEV = 60
+    if enemy_dist < 20:
+        felix_dev = diff_angles(me_and_eny_theta, my_heading)
+        eny_angle_from_me = adjust_180_angle(me_and_eny_theta)
+        eny_dev = diff_angles(eny_angle_from_me, eny_head)
+        total_dev = felix_dev + eny_dev
+        return total_dev
 
-    if state[Constants.state["out"].index] == 1:
-        return Constants.neg_reward
-    else:
-        if enemy_dist < 20:
-            felix_dev = diff_angles(me_and_eny_theta, my_heading)
-            print felix_dev
-            eny_angle_from_enemy = adjust_180_angle(me_and_eny_theta)
-            print eny_angle_from_enemy
-            eny_dev = diff_angles(eny_angle_from_enemy, eny_head)
-            print eny_dev
-            total_dev = felix_dev + eny_dev
-            print "total dev " + str(total_dev)
-            if total_dev < MAX_DEV:
-                totalReward += -(70*(.97**total_dev) - 18)
-        return totalReward
-
-def angle_to_flag(state):
-    myHeading=state[Constants.state["heading"].index]
-    flag_angle=state[Constants.state["flag_theta"].index]
-    if state[Constants.state["out"].index] == 1:
-        return 0
-    else:
-        me_to_flag = adjust_180_angle(flag_angle)
-        diff = diff_angles(myHeading, me_to_flag)
-        if diff < 60:
-            return (70*(.97**diff) - 10)
-        else:
-            return 0    
-
+def within_tagged(state):
+   """
+   helper function to give a reward based on proximity to the goal state (flag)
+   """
+   deviation = eny_angle(state)
+   enemy_dist=state[Constants.state["enemy_dist"].index]
+   if state[Constants.state["out"].index] == 1:
+       return Constants.neg_reward
+   elif enemy_dist < 8:
+       return Constants.neg_reward
+   elif enemy_dist < 20:
+       if deviation <= 60:
+           return Constants.neg_reward
+       else: 
+           return Constants.neg_reward-enemy_dist*(Constants.neg_reward/30)
+   else:
+       return 0
     
 def evaluate(deep_learner, process_cmd, simulation_cmd, iters = Constants.num_eval_iters,
             process_path = Constants.process_path, read_path = Constants.read_path):

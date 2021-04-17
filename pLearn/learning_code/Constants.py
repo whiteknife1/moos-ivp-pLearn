@@ -177,9 +177,9 @@ class Constants:
       self.rel_headings = [-30,0,30]
       self.theta_size_act = 60
       self.discount_factor = .999
-      self.max_reward = 100
-      self.neg_reward = -50
-      self.reward_dropoff = .96
+      self.max_reward = 10000
+      self.neg_reward = -500
+      self.reward_dropoff = 1.3
       self.max_reward_radius = 10
       self.smooth_reward = True
       self.save_iteration=True
