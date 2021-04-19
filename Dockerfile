@@ -24,7 +24,7 @@ ENV PATH="/home/moos/${PLEARN}/bin:${PATH}"
 ENV IVP_BEHAVIOR_DIRS="/home/moos/${PLEARN}/lib:${IVP_BEHAVIOR_DIRS}"
 ENV PYTHONPATH="${PYTHONPATH}:/home/moos/${PLEARN}/pLearn/learning_code:/home/moos/${PLEARN}/src/lib_python"
 
-RUN git clone --single-branch --branch agg_reward https://github.com/whiteknife1/moos-ivp-pLearn.git
+RUN git clone --single-branch --branch my_reward https://github.com/whiteknife1/moos-ivp-pLearn.git
 COPY --chown=moos:moos . moos-ivp-pLearn/
 
 RUN cd ${PLEARN} && ./build.sh

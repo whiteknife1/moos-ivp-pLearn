@@ -88,12 +88,9 @@ def make_rewards(smooth = True):
 def within_goal(state):
    dist=state[Constants.state["flag_dist"].index]
    if state[Constants.state["out"].index] != 1:
-        if dist < Constants.max_reward_radius:
-            return Constants.max_reward
-        else:
-            return (Constants.max_reward*(1.0/dist))**Constants.reward_dropoff
+        return float(-(dist**1.8947)+15000.00)
    else:
-        return Constants.neg_reward # was previously 0
+        return 0
 
 def within_bound(state):
    """
@@ -103,12 +100,8 @@ def within_bound(state):
             state[Constants.state["rightBound"].index],
             state[Constants.state["upperBound"].index],
             state[Constants.state["lowerBound"].index])
-   if state[Constants.state["out"].index] == 1:
-       return Constants.neg_reward
-   elif boundary_dist < 8:
-       return float((10*boundary_dist) - 150.0) # changed from -100 to -150 to make harder boundary
-   elif boundary_dist < 15:
-       return float(-40.0 + (2.5*boundary_dist))
+   if boundary_dist <= 10:
+       return float((boundary_dist**3.477)-3000.00)
    else:
        return 0
 
@@ -128,46 +121,47 @@ def diff_angles(ang1, ang2):
 
 def heading_towards_flag(state):
     flag_dist = state[Constants.state["flag_dist"].index]
+    enemy_dist=state[Constants.state["enemy_dist"].index]
     if flag_dist > 25+Constants.max_reward_radius:
-        flag_theta = state[Constants.state["flag_theta"].index]
-        heading = state[Constants.state["heading"].index]
-        diff = diff_angles(flag_theta_heading)
-        return (diff/180.0)*Constants.neg_reward
+        if enemy_dist < 20:
+            return 0
+        else:
+            flag_theta = state[Constants.state["flag_theta"].index]
+            heading = state[Constants.state["heading"].index]
+            diff = diff_angles(flag_theta_heading)
+            return float(math.cos(math.radians(diff))*4000.00+1000.00)
     else:
-        return 0
+        return 5000.00
 
 def eny_angle(state):
     """
     helper function to assess likelyhood of enemy collision
     """
-    enemy_dist=state[Constants.state["enemy_dist"].index]
     me_and_eny_theta = state[Constants.state["enemy_angle"].index] #check that this is actually the angle between you and enemy 
     eny_head = state[Constants.state["enemy_heading"].index]
     my_heading = state[Constants.state["heading"].index]
-    if enemy_dist < 20:
-        felix_dev = diff_angles(me_and_eny_theta, my_heading)
-        eny_angle_from_me = adjust_180_angle(me_and_eny_theta)
-        eny_dev = diff_angles(eny_angle_from_me, eny_head)
-        total_dev = felix_dev + eny_dev
-        return total_dev
+    felix_dev = diff_angles(me_and_eny_theta, my_heading)
+    eny_angle_from_me = adjust_180_angle(me_and_eny_theta)
+    eny_dev = diff_angles(eny_angle_from_me, eny_head)
+    total_dev = felix_dev + eny_dev
+    return total_dev
 
 def within_tagged(state):
    """
    helper function to give a reward based on proximity to the goal state (flag)
    """
-   deviation = eny_angle(state)
    enemy_dist=state[Constants.state["enemy_dist"].index]
-   if state[Constants.state["out"].index] == 1:
-       return Constants.neg_reward
-   elif enemy_dist < 8:
-       return Constants.neg_reward
-   elif enemy_dist < 20:
-       if deviation <= 60:
-           return Constants.neg_reward
-       else: 
-           return Constants.neg_reward-enemy_dist*(Constants.neg_reward/30)
-   else:
-       return 0
+   flag_dist = state[Constants.state["flag_dist"].index]
+   reward_change = 0
+   if flag_dist >= Constants.max_reward_radius:
+      if enemy_dist <= 15:
+         reward_change = (x**3.1)-5000.00
+      if enemy_dist <= 20:
+         deviation = eny_angle(state)
+         if deviation > 180.00:
+            deviation = 180.00
+         reward_change += -(math.cos(math.radians(deviation)))*1000.00
+   return float(reward_change)
     
 def evaluate(deep_learner, process_cmd, simulation_cmd, iters = Constants.num_eval_iters,
             process_path = Constants.process_path, read_path = Constants.read_path):

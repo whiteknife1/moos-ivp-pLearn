@@ -66,7 +66,7 @@ class Constants:
       self.state["enemy_angle"]=State(index=10, typ="angle", var="player", rang=(0,360), vehicle="evan")
       self.state["enemy_heading"]=State(index=11, typ="raw", var="heading", rang=(0, 360), vehicle="evan")
       # need to define vehicles to take deviation from, excluding self
-      self.state["deviation"] = State(index=12, typ="angle", var= "deviation", rang=(0,1), vehicle="evan")
+      # self.state["deviation"] = State(index=12, typ="angle", var= "deviation", rang=(0,1), vehicle="evan")
 
       #maybe add speed info
       self.num_states=len(self.state)
