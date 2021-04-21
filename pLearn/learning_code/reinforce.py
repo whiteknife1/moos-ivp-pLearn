@@ -128,7 +128,7 @@ def heading_towards_flag(state):
         else:
             flag_theta = state[Constants.state["flag_theta"].index]
             heading = state[Constants.state["heading"].index]
-            diff = diff_angles(flag_theta_heading)
+            diff = diff_angles(flag, theta_heading)
             return float(math.cos(math.radians(diff))*4000.00+1000.00)
     else:
         return 5000.00
@@ -155,7 +155,7 @@ def within_tagged(state):
    reward_change = 0
    if flag_dist >= Constants.max_reward_radius:
       if enemy_dist <= 15:
-         reward_change = (x**3.1)-5000.00
+         reward_change = (enemy_dist**3.1)-5000.00
       if enemy_dist <= 20:
          deviation = eny_angle(state)
          if deviation > 180.00:
