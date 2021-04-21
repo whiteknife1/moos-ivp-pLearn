@@ -499,7 +499,9 @@ class Deep_Learner:
             else:
                 X=self.state2vec(s_0).T
             #create y
-            y.append((r+self.discount_factor*max(self.approx_target_q_value(s_1, act) for act in self.actions))[0])
+            # No adding to reward
+            y.append((max(self.approx_target_q_value(s_1, act) for act in self.actions))[0])
+            # y.append((r+self.discount_factor*max(self.approx_target_q_value(s_1, act) for act in self.actions))[0])
             data_sets[a] = (X, y)
 
         for a in self.actions:
