@@ -128,7 +128,7 @@ def heading_towards_flag(state):
         else:
             flag_theta = state[Constants.state["flag_theta"].index]
             heading = state[Constants.state["heading"].index]
-            diff = diff_angles(flag, theta_heading)
+            diff = diff_angles(flag_theta, heading)
             return float(math.cos(math.radians(diff))*4000.00+1000.00)
     else:
         return 5000.00
