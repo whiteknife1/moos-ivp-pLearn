@@ -108,7 +108,7 @@ class Constants:
       self.num_units = 10
       self.activation_function = "relu"
       self.num_traj = 1
-      self.iters = 1600
+      self.iters = 8
       self.lr = .005
       self.training_type = "batch"
       self.eps_min = .01
@@ -232,5 +232,5 @@ class Constants:
       self.save_model_dir = learning_path+'models/static_4/'
       self.mem_address = learning_path+'models/static_4/'
       self.eval_address = learning_path+'models/static_4'
-      self.test_address = learning_path+'models/static_4/'
+      self.test_address = learning_path+'models/static_3/iteration_314/'
 
