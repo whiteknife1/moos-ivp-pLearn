@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 from Constants import Constants
 Constants=Constants()
 
-with open(Constants.load_model_dir+"model_assessment.log") as f:
+with open(Constants.load_model_dir+"pre_assessment.log") as f:
     f.readline()
     lines = f.readlines()
 
@@ -11,10 +11,10 @@ performance_metrics=[]
 for line in lines:
     metrics = line.split()
     if len(metrics) == 11:
-        i = int(metrics[0].split('_')[1][:-1])
-        score = int(metrics[3])
-        percent_in = int(metrics[7])
-        percent_captured = int(metrics[10])
+        i = float(metrics[0].split('_')[1][:-1])
+        score = float(metrics[3])
+        percent_in = float(metrics[7])
+        percent_captured = float(metrics[10])
         performance_metrics.append((i, percent_in, score, percent_captured))
 
 fig = plt.figure(1)
