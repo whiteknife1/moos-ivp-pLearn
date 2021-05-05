@@ -43,8 +43,6 @@ public:
   double       process_flag_captured();
   double       process_dist(double, double, int, double, double);
   double       process_angle(double, double, int, std::string, double, double);
-  double       diff_angles(double, double);
-  double       adjust_angle_180(double);
   double       processBound(double, double, std::string);
   void         showPoint(string, string, double, double);
 
